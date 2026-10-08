@@ -82,7 +82,7 @@ first visit 17.03 MB, repeat visit 0.01 MB
 - **One place, one browser.** Every measurement comes from a GitHub Actions runner in a US datacentre, running headless Chromium with a Moto G4's screen and user agent. Sites serve different pages by region, and some serve different pages to bots.
 - **Logged-out home pages, first screen only.** There's no scrolling, no consent clicks and no logging in. Real use downloads more.
 - **"Didn't run during load" is not "dead code".** Some of it runs when someone taps something. The point is that it didn't need to arrive first.
-- **Video makes some pages unstable.** CNN measured 14.63 MB in the study run and 17.03 MB in a budget run ten minutes later.
+- **Video makes some pages unstable.** CNN measured 14.63 MB in the study run and 17.03 MB in a budget run later the same morning.
 - **Prices are averages from 2023**, the latest edition Cable.co.uk publishes. Real people buy bundles, promotions and night plans. Zimbabwe's $43.75 per GB is an outlier in the source data, so check it before you quote it.
 - **GNI per capita is an average, not a wage.** It flatters every country with a wide income gap. The 2,080-hour year is a convention, not a fact about anyone.
 
