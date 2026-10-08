@@ -1,4 +1,4 @@
-/** Carriers sell data in binary gigabytes (1 GB = 1024 MB), so we price it the same way. */
+/** Many carriers count data in binary gigabytes (1 GB = 1024 MB), so we price it the same way. */
 export const BYTES_PER_GB = 2 ** 30;
 
 /**

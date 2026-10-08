@@ -1,5 +1,5 @@
-import { costUsd, monthlyBytes, workSeconds } from './cost.js';
-import type { Market } from './data.js';
+import { costUsd, monthlyBytes, workSeconds } from './cost';
+import type { Market } from './data';
 
 export interface BudgetLine {
   country: string;

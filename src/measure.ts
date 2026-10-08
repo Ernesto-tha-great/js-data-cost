@@ -1,10 +1,5 @@
 import { devices, type Browser, type CDPSession } from 'playwright';
-import { summariseCoverage } from './coverage.js';
-
-export interface Site {
-  name: string;
-  url: string;
-}
+import { summariseCoverage } from './coverage';
 
 export interface LoadStats {
   /** Bytes over the wire, headers included, as Chrome's network stack counted them. */
@@ -13,31 +8,33 @@ export interface LoadStats {
   byType: Record<string, number>;
 }
 
-export interface SiteMeasurement {
-  name: string;
+export interface PageMeasurement {
   url: string;
   finalUrl: string | null;
   status: number | null;
   title: string | null;
-  /** Bot walls, error pages and "access denied" screens: excluded from the analysis. */
+  /** Bot walls, error pages and "access denied" screens. */
   blocked: boolean;
+  /** The first visit, with an empty cache. */
   cold: LoadStats | null;
+  /** The repeat visit, with whatever the first visit cached. */
   warm: LoadStats | null;
+  /** JavaScript on the first visit: bytes on the wire, and characters of source that did and didn't run. */
   js: { transferred: number; sourceBytes: number; usedBytes: number } | null;
   error?: string;
 }
 
 export interface MeasureOptions {
   timeoutMs?: number;
-  /** How long the network has to be idle before we call the page "loaded". */
+  /** How long the network has to be quiet before we call the page "loaded". */
   quietMs?: number;
-  /** Hard cap on waiting for quiet, for pages that never stop polling. */
+  /** The longest we'll wait for quiet, for pages that never stop talking. */
   maxSettleMs?: number;
 }
 
 const BLOCKED = /access denied|just a moment|attention required|are you a robot|captcha|unusual traffic|blocked/i;
 
-/** Counts every byte Chrome receives, by resource type, and tracks what's still in flight. */
+/** Counts every byte Chrome receives, by resource type, and keeps track of what's still in flight. */
 class TransferTracker {
   private types = new Map<string, string>();
   private inflight = new Set<string>();
@@ -70,6 +67,7 @@ class TransferTracker {
     return this.inflight.size > 0;
   }
 
+  /** Returns the counts so far and starts again from zero. */
   takeStats(): LoadStats {
     const stats = this.stats;
     this.stats = { bytes: 0, requests: 0, byType: {} };
@@ -78,6 +76,7 @@ class TransferTracker {
   }
 }
 
+/** Waits until nothing has been in flight for `quietMs`, or until `maxMs` is up. */
 async function settle(tracker: TransferTracker, quietMs: number, maxMs: number): Promise<void> {
   const start = Date.now();
   while (Date.now() - start < maxMs) {
@@ -87,11 +86,11 @@ async function settle(tracker: TransferTracker, quietMs: number, maxMs: number):
 }
 
 /**
- * Loads a page twice as a first-time mobile visitor would: once with an empty
- * cache, once more with whatever the first visit cached. No scrolling, no
+ * Loads a page twice, the way someone on a phone would: once with an empty
+ * cache, then again with whatever the first visit cached. No scrolling, no
  * clicking "accept": just what arrives before anyone touches the screen.
  */
-export async function measureSite(browser: Browser, site: Site, options: MeasureOptions = {}): Promise<SiteMeasurement> {
+export async function measurePage(browser: Browser, url: string, options: MeasureOptions = {}): Promise<PageMeasurement> {
   const timeoutMs = options.timeoutMs ?? 45_000;
   const quietMs = options.quietMs ?? 2_000;
   const maxSettleMs = options.maxSettleMs ?? 15_000;
@@ -102,28 +101,25 @@ export async function measureSite(browser: Browser, site: Site, options: Measure
   await cdp.send('Network.enable');
   const tracker = new TransferTracker(cdp);
 
-  const result: SiteMeasurement = {
-    name: site.name, url: site.url, finalUrl: null, status: null, title: null, blocked: false, cold: null, warm: null, js: null,
-  };
+  const result: PageMeasurement = { url, finalUrl: null, status: null, title: null, blocked: false, cold: null, warm: null, js: null };
 
   try {
     await page.coverage.startJSCoverage({ resetOnNavigation: false });
-    const response = await page.goto(site.url, { waitUntil: 'load', timeout: timeoutMs });
+    const response = await page.goto(url, { waitUntil: 'load', timeout: timeoutMs });
     await settle(tracker, quietMs, maxSettleMs);
     const coverage = await page.coverage.stopJSCoverage();
 
     result.status = response?.status() ?? null;
     result.finalUrl = page.url();
     result.title = await page.title();
-    result.blocked = (result.status ?? 0) >= 400 || BLOCKED.test(result.title ?? '');
+    result.blocked = (result.status ?? 0) >= 400 || BLOCKED.test(result.title);
     result.cold = tracker.takeStats();
     result.js = { transferred: result.cold.byType.Script ?? 0, ...summariseCoverage(coverage) };
 
-    // Leave and come back, like a person would. (Chrome only revalidates the
-    // HTML on a reload anyway; the detour keeps this an ordinary navigation.)
+    // Leave and come back, like a person would.
     await page.goto('about:blank');
     tracker.takeStats();
-    await page.goto(site.url, { waitUntil: 'load', timeout: timeoutMs });
+    await page.goto(url, { waitUntil: 'load', timeout: timeoutMs });
     await settle(tracker, quietMs, maxSettleMs);
     result.warm = tracker.takeStats();
   } catch (err) {

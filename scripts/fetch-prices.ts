@@ -1,7 +1,8 @@
 /**
  * Downloads the average price of 1 GB of mobile data, per country, from
  * Cable.co.uk's Worldwide Mobile Data Pricing table and saves it to
- * data/prices.csv. Run in CI; the numbers are theirs, credited in the README.
+ * data/prices.csv. The numbers are theirs, so credit them if you publish
+ * anything based on them.
  */
 import { mkdirSync, writeFileSync } from 'node:fs';
 

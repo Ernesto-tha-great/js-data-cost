@@ -3,23 +3,23 @@
  * same way the study does, prices it in the countries you name, and exits 1
  * when it costs more than you said it could.
  *
- *   npm run budget -- budget.json                         # the url in the file
+ *   npm run budget -- budget.json                         # the URL in the file
  *   npm run budget -- budget.json https://example.com/    # or any other page
  *
  * Needs data/prices.csv and data/income.csv (npm run fetch:prices, npm run fetch:income).
  */
 import { readFileSync } from 'node:fs';
 import { chromium } from 'playwright';
-import { checkBudget, type BudgetLine } from '../src/budget.js';
-import { formatDuration, formatUsd } from '../src/cost.js';
-import { loadMarket } from '../src/data.js';
-import { measureSite } from '../src/measure.js';
+import { checkBudget, type BudgetLine } from '../src/budget';
+import { formatDuration, formatUsd } from '../src/cost';
+import { loadMarket } from '../src/data';
+import { measurePage } from '../src/measure';
 
 const config = JSON.parse(readFileSync(process.argv[2] ?? 'budget.json', 'utf8')) as { url: string; budgets: BudgetLine[] };
 const url = process.argv[3] ?? config.url;
 
 const browser = await chromium.launch();
-const result = await measureSite(browser, { name: url, url });
+const result = await measurePage(browser, url);
 await browser.close();
 
 if (result.error || result.blocked || !result.cold || !result.warm) {
