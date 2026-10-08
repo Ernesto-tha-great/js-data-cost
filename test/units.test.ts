@@ -4,7 +4,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, it } from 'node:test';
 import { checkBudget } from '../src/budget.js';
-import { costUsd, formatDuration, monthlyBytes, workSeconds, BYTES_PER_GB, VISITS_PER_MONTH } from '../src/cost.js';
+import { costUsd, formatDuration, formatUsd, monthlyBytes, workSeconds, BYTES_PER_GB, VISITS_PER_MONTH } from '../src/cost.js';
 import { executedBytes } from '../src/coverage.js';
 import { loadMarket } from '../src/data.js';
 
@@ -49,6 +49,13 @@ describe('cost', () => {
     assert.equal(formatDuration(408), '6.8 min');
     assert.equal(formatDuration(1680), '28 min');
     assert.equal(formatDuration(122_400), '34 h');
+    assert.equal(formatDuration(0.04), '< 0.1 s');
+  });
+
+  it('formats money down to fractions of a cent', () => {
+    assert.equal(formatUsd(43.75), '$43.75');
+    assert.equal(formatUsd(0.0094), '0.94¢');
+    assert.equal(formatUsd(0.00002), '< 0.01¢');
   });
 });
 

@@ -28,6 +28,7 @@ export function workSeconds(usd: number, gniPerCapitaUsd: number): number {
 }
 
 export function formatDuration(seconds: number): string {
+  if (seconds < 0.1) return '< 0.1 s';
   if (seconds < 10) return `${seconds.toFixed(1)} s`;
   if (seconds < 60) return `${Math.round(seconds)} s`;
   const minutes = seconds / 60;
@@ -37,6 +38,7 @@ export function formatDuration(seconds: number): string {
 }
 
 export function formatUsd(usd: number): string {
+  if (usd < 0.0001) return '< 0.01¢';
   return usd < 0.01 ? `${(usd * 100).toFixed(2)}¢` : `$${usd.toFixed(2)}`;
 }
 
