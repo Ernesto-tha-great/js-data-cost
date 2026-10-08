@@ -4,7 +4,7 @@
  * docs/images.
  */
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { costUsd, formatDuration, formatUsd, median, workSeconds, WORK_HOURS_PER_YEAR } from '../src/cost.js';
+import { costUsd, formatDuration, formatUsd, median, monthlyBytes, workSeconds, WORK_HOURS_PER_YEAR } from '../src/cost.js';
 import { loadMarket } from '../src/data.js';
 import type { SiteMeasurement } from '../src/measure.js';
 
@@ -31,6 +31,8 @@ const sites = usable
       // Coverage counts decoded source; we apply its ratio to the compressed bytes on the wire. An estimate.
       jsUnusedBytes: jsBytes * jsUnused,
       requests: s.cold!.requests,
+      coldByType: s.cold!.byType,
+      warmByType: s.warm!.byType,
     };
   })
   .sort((a, b) => b.coldBytes - a.coldBytes);
@@ -42,6 +44,44 @@ const heaviest = sites[0]!;
 const totalCold = sites.reduce((sum, s) => sum + s.coldBytes, 0);
 const totalJs = sites.reduce((sum, s) => sum + s.jsBytes, 0);
 const totalUnusedJs = sites.reduce((sum, s) => sum + s.jsUnusedBytes, 0);
+
+// Resource types a long-lived Cache-Control header could serve from cache on a
+// repeat visit. HTML, API calls and beacons are left out: they usually change.
+const CACHEABLE = ['Script', 'Image', 'Font', 'Stylesheet', 'Media'];
+const sum = (values: Iterable<number>) => [...values].reduce((a, b) => a + b, 0);
+
+const byType = new Map<string, number>();
+for (const s of sites) for (const [type, bytes] of Object.entries(s.coldByType)) byType.set(type, (byType.get(type) ?? 0) + bytes);
+const resourceTypes = [...byType].map(([type, bytes]) => ({ type, share: bytes / totalCold })).sort((a, b) => b.share - a.share);
+
+const jsHeavySites = sites.filter((s) => s.jsBytes / s.coldBytes > 0.5).length;
+const medianJs = median(sites.map((s) => s.jsBytes));
+const videoSites = sites.filter((s) => (s.coldByType.Media ?? 0) > 100_000).map((s) => ({ name: s.name, mediaBytes: s.coldByType.Media! }));
+const heaviestMedia = heaviest.coldByType.Media ?? 0;
+
+// Share of a month's bytes that come from repeat visits, at 5 visits a day (the model) and at 1.
+const repeatShare = (visitsPerDay: number) => {
+  const repeats = visitsPerDay * 30 - 1;
+  const repeatBytes = repeats * sum(sites.map((s) => s.warmBytes));
+  return repeatBytes / (totalCold + repeatBytes);
+};
+
+const months = sites
+  .map((s) => {
+    const [topType, topBytes] = Object.entries(s.warmByType).sort((a, b) => b[1] - a[1])[0] ?? ['', 0];
+    const uncacheableWarm = s.warmBytes - sum(CACHEABLE.map((t) => s.warmByType[t] ?? 0));
+    return {
+      name: s.name,
+      coldBytes: s.coldBytes,
+      warmBytes: s.warmBytes,
+      monthBytes: monthlyBytes(s.coldBytes, s.warmBytes),
+      topRepeatType: topType,
+      topRepeatBytes: topBytes,
+      // Upper bound for fix 3: every cacheable byte on the repeat visit comes from cache.
+      monthBytesIfCached: monthlyBytes(s.coldBytes, uncacheableWarm),
+    };
+  })
+  .sort((a, b) => b.monthBytes - a.monthBytes);
 
 // --- Countries ----------------------------------------------------------------
 const rows = market.countries
@@ -63,6 +103,8 @@ const rows = market.countries
     };
   })
   .sort((a, b) => b.gbWorkSeconds - a.gbWorkSeconds);
+const spread = rows[0]!.gbWorkSeconds / rows.at(-1)!.gbWorkSeconds;
+const spreadWithoutTop = rows[1]!.gbWorkSeconds / rows.at(-1)!.gbWorkSeconds;
 const missingPrices = market.countries.filter((c) => market.priceFor(c.name) === undefined).map((c) => c.name);
 const missingIncome = market.countries.filter((c) => market.incomeFor(c.name) === undefined).map((c) => c.name);
 
@@ -86,6 +128,15 @@ const summary = {
   jsShareOfBytes: totalJs / totalCold,
   unusedJsShareOfBytes: totalUnusedJs / totalCold,
   unusedJsShareOfJs: totalUnusedJs / totalJs,
+  unusedJsBytes: totalUnusedJs,
+  medianJsBytes: medianJs,
+  jsHeavySites,
+  resourceTypes,
+  videoSites,
+  heaviestWithoutMediaBytes: heaviest.coldBytes - heaviestMedia,
+  repeatShareOfMonth: { fiveVisitsADay: repeatShare(5), oneVisitADay: repeatShare(1) },
+  months,
+  workTimeSpread: { all: spread, withoutMostExpensive: spreadWithoutTop, mostExpensive: rows[0]!.name, secondMostExpensive: rows[1]!.name, cheapest: rows.at(-1)!.name },
   countries: rows,
   missingPrices,
   missingIncome,
@@ -120,6 +171,27 @@ const md = [
   '|---|---:|---:|---:|---:|---:|',
   ...rows.map((r) =>
     `| ${r.name} | $${r.usdPerGb.toFixed(2)} | ${formatDuration(r.gbWorkSeconds)} | ${formatUsd(r.medianFirstVisitUsd)} · ${formatDuration(r.medianFirstVisitWorkSeconds)} | ${formatUsd(r.heaviestFirstVisitUsd)} · ${formatDuration(r.heaviestFirstVisitWorkSeconds)} | ${money(r.unusedJsPerMillionVisitsUsd)} |`),
+  '',
+  `1 GB costs ${Math.round(spread).toLocaleString('en-US')}× more work in ${rows[0]!.name} than in ${rows.at(-1)!.name}. Without ${rows[0]!.name}, the gap is ${Math.round(spreadWithoutTop).toLocaleString('en-US')}× (${rows[1]!.name} against ${rows.at(-1)!.name}).`,
+  '',
+  '## What the bytes are',
+  '',
+  '| Resource type | Share of first-visit bytes |',
+  '|---|---:|',
+  ...resourceTypes.filter((t) => t.share >= 0.005).map((t) => `| ${t.type} | ${pct(t.share)} |`),
+  `| Everything else | ${pct(sum(resourceTypes.filter((t) => t.share < 0.005).map((t) => t.share)))} |`,
+  '',
+  `JavaScript was more than half of the first visit on ${jsHeavySites} of ${sites.length} sites. The median site downloaded ${mb(medianJs)} of it. In total, ${mb(totalUnusedJs)} of JavaScript didn't run during load.`,
+  `Video and audio over 100 KB on a first visit: ${videoSites.map((v) => `${v.name} ${mb(v.mediaBytes)}`).join(', ')}. Without it, ${heaviest.name} would be ${mb(heaviest.coldBytes - heaviestMedia)} instead of ${mb(heaviest.coldBytes)} (${pct(heaviestMedia / heaviest.coldBytes, 0)} less).`,
+  '',
+  '## A month of use',
+  '',
+  `A month is 5 visits a day for 30 days: 1 first visit and 149 repeat visits. Repeat visits are ${pct(repeatShare(5), 0)} of all those bytes (${pct(repeatShare(1), 0)} at one visit a day).`,
+  `The last column is an upper bound: the month if every ${CACHEABLE.join(', ').toLowerCase()} byte on the repeat visit came from cache.`,
+  '',
+  '| Site | First visit | Repeat visit | A month | Most re-downloaded on a repeat visit | A month, if cacheable types were cached |',
+  '|---|---:|---:|---:|---|---:|',
+  ...months.slice(0, 12).map((m) => `| ${m.name} | ${mb(m.coldBytes)} | ${mb(m.warmBytes)} | ${(m.monthBytes / 1e6).toFixed(0)} MB | ${mb(m.topRepeatBytes)} ${m.topRepeatType} | ${(m.monthBytesIfCached / 1e6).toFixed(0)} MB |`),
   '',
   missingPrices.length ? `No price data for: ${missingPrices.join(', ')}.` : '',
   missingIncome.length ? `No income data for: ${missingIncome.join(', ')}.` : '',

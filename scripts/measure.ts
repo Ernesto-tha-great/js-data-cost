@@ -2,7 +2,9 @@
  * Measures every site in sites.json and writes results/measurements.json.
  *
  *   npm run measure                 # all 50
- *   npm run measure -- Wikipedia    # just the ones whose name matches
+ *   npm run measure -- Wikipedia    # just the ones whose name matches,
+ *                                   # saved to results/measurements.wikipedia.json
+ *                                   # so the full run stays intact
  */
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { chromium } from 'playwright';
@@ -26,9 +28,10 @@ for (const site of sites) {
 }
 await browser.close();
 
+const out = filter ? `results/measurements.${filter.replace(/[^a-z0-9]+/g, '-')}.json` : 'results/measurements.json';
 mkdirSync('results', { recursive: true });
 writeFileSync(
-  'results/measurements.json',
+  out,
   JSON.stringify(
     {
       measuredAt: new Date().toISOString(),
@@ -41,4 +44,4 @@ writeFileSync(
     2,
   ) + '\n',
 );
-console.log(`\nMeasured ${results.length} sites → results/measurements.json`);
+console.log(`\nMeasured ${results.length} sites → ${out}`);

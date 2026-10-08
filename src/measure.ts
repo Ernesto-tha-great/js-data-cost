@@ -119,8 +119,8 @@ export async function measureSite(browser: Browser, site: Site, options: Measure
     result.cold = tracker.takeStats();
     result.js = { transferred: result.cold.byType.Script ?? 0, ...summariseCoverage(coverage) };
 
-    // Leave and come back, like a person would. Navigating to the same URL
-    // twice in a row is treated as a reload, which revalidates the cache.
+    // Leave and come back, like a person would. (Chrome only revalidates the
+    // HTML on a reload anyway; the detour keeps this an ordinary navigation.)
     await page.goto('about:blank');
     tracker.takeStats();
     await page.goto(site.url, { waitUntil: 'load', timeout: timeoutMs });

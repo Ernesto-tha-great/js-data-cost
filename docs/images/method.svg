@@ -39,7 +39,7 @@
 <rect class="box" x="56" y="330" width="568" height="96" rx="10"/>
 <text class="n" x="76" y="358">2</text><text class="bt" x="96" y="358">Leave</text>
 <text class="code" x="96" y="384" style="fill:var(--code)">page.goto('about:blank')</text>
-<text class="bb" x="96" y="408">Going straight back counts as a reload, and a reload revalidates everything.</text>
+<text class="bb" x="96" y="408">Leave the page, then come back to it: an ordinary navigation, not a refresh.</text>
 
 <!-- Step 3 -->
 <rect class="box" x="56" y="456" width="568" height="90" rx="10"/>

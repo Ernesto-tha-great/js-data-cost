@@ -76,7 +76,27 @@
     "jsBytes": 1321300,
     "jsUnused": 0.709435534052734,
     "jsUnusedBytes": 937377.1711438774,
-    "requests": 66
+    "requests": 66,
+    "coldByType": {
+      "Font": 436889,
+      "Script": 1321300,
+      "Document": 618482,
+      "Image": 743666,
+      "Media": 11383163,
+      "Fetch": 78126,
+      "XHR": 4064,
+      "Stylesheet": 43183,
+      "Preflight": 0
+    },
+    "warmByType": {
+      "Font": 0,
+      "Script": 1706,
+      "Image": 7769,
+      "Document": 615858,
+      "XHR": 1157,
+      "Stylesheet": 212,
+      "Fetch": 421
+    }
   },
   "lightest": {
     "name": "IMDb",
@@ -85,11 +105,431 @@
     "jsBytes": 411399,
     "jsUnused": 0.5313456522770024,
     "jsUnusedBytes": 218595.0700011065,
-    "requests": 14
+    "requests": 14,
+    "coldByType": {
+      "Document": 5312,
+      "Script": 411399,
+      "Fetch": 4526,
+      "Image": 0,
+      "Stylesheet": 574,
+      "Font": 31078
+    },
+    "warmByType": {
+      "Document": 2588,
+      "Script": 99450,
+      "Stylesheet": 0,
+      "Image": 0,
+      "Font": 0,
+      "Fetch": 2680
+    }
   },
   "jsShareOfBytes": 0.45300813638556775,
   "unusedJsShareOfBytes": 0.2571716512422281,
   "unusedJsShareOfJs": 0.5676976429035752,
+  "unusedJsBytes": 35287835.128225714,
+  "medianJsBytes": 1456512,
+  "jsHeavySites": 21,
+  "resourceTypes": [
+    {
+      "type": "Script",
+      "share": 0.45300813638556775
+    },
+    {
+      "type": "Image",
+      "share": 0.21490617231973114
+    },
+    {
+      "type": "Media",
+      "share": 0.1057392114373997
+    },
+    {
+      "type": "Font",
+      "share": 0.06242040918162763
+    },
+    {
+      "type": "Fetch",
+      "share": 0.06090344062339201
+    },
+    {
+      "type": "Document",
+      "share": 0.0417636892089978
+    },
+    {
+      "type": "Stylesheet",
+      "share": 0.026605241456470845
+    },
+    {
+      "type": "XHR",
+      "share": 0.026004396527627188
+    },
+    {
+      "type": "Other",
+      "share": 0.007935802694608586
+    },
+    {
+      "type": "Ping",
+      "share": 0.0005474470175860012
+    },
+    {
+      "type": "Manifest",
+      "share": 0.0001508507390640411
+    },
+    {
+      "type": "FedCM",
+      "share": 0.000015202407927319664
+    },
+    {
+      "type": "Preflight",
+      "share": 0
+    }
+  ],
+  "videoSites": [
+    {
+      "name": "CNN",
+      "mediaBytes": 11383163
+    },
+    {
+      "name": "Amazon",
+      "mediaBytes": 1818952
+    },
+    {
+      "name": "Airbnb",
+      "mediaBytes": 251655
+    },
+    {
+      "name": "TikTok",
+      "mediaBytes": 982244
+    }
+  ],
+  "heaviestWithoutMediaBytes": 3245710,
+  "repeatShareOfMonth": {
+    "fiveVisitsADay": 0.9379440290927902,
+    "oneVisitADay": 0.7463052765555652
+  },
+  "months": [
+    {
+      "name": "Figma",
+      "coldBytes": 5779727,
+      "warmBytes": 2685126,
+      "monthBytes": 405863501,
+      "topRepeatType": "XHR",
+      "topRepeatBytes": 2576182,
+      "monthBytesIfCached": 405863501
+    },
+    {
+      "name": "Yahoo",
+      "coldBytes": 5744151,
+      "warmBytes": 2008668,
+      "monthBytes": 305035683,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 1163059,
+      "monthBytesIfCached": 104730811
+    },
+    {
+      "name": "Nike",
+      "coldBytes": 5841130,
+      "warmBytes": 1039179,
+      "monthBytes": 160678801,
+      "topRepeatType": "Image",
+      "topRepeatBytes": 601820,
+      "monthBytesIfCached": 17624050
+    },
+    {
+      "name": "WhatsApp",
+      "coldBytes": 1692491,
+      "warmBytes": 970112,
+      "monthBytes": 146239179,
+      "topRepeatType": "Image",
+      "topRepeatBytes": 915441,
+      "monthBytesIfCached": 9838470
+    },
+    {
+      "name": "CNN",
+      "coldBytes": 14628873,
+      "warmBytes": 627123,
+      "monthBytes": 108070200,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 615858,
+      "monthBytesIfCached": 106626837
+    },
+    {
+      "name": "Google",
+      "coldBytes": 930895,
+      "warmBytes": 694216,
+      "monthBytes": 104369079,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 676837,
+      "monthBytesIfCached": 3515747
+    },
+    {
+      "name": "Pinterest",
+      "coldBytes": 7186203,
+      "warmBytes": 642865,
+      "monthBytes": 102973088,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 473142,
+      "monthBytesIfCached": 87692095
+    },
+    {
+      "name": "Booking.com",
+      "coldBytes": 6612858,
+      "warmBytes": 589590,
+      "monthBytes": 94461768,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 327757,
+      "monthBytesIfCached": 42504574
+    },
+    {
+      "name": "Amazon",
+      "coldBytes": 6274218,
+      "warmBytes": 476258,
+      "monthBytes": 77236660,
+      "topRepeatType": "XHR",
+      "topRepeatBytes": 303067,
+      "monthBytesIfCached": 52643763
+    },
+    {
+      "name": "Apple",
+      "coldBytes": 1726162,
+      "warmBytes": 415404,
+      "monthBytes": 63621358,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 377523,
+      "monthBytesIfCached": 1726162
+    },
+    {
+      "name": "Walmart",
+      "coldBytes": 3630177,
+      "warmBytes": 402304,
+      "monthBytes": 63573473,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 277563,
+      "monthBytesIfCached": 21345234
+    },
+    {
+      "name": "Wikipedia",
+      "coldBytes": 626792,
+      "warmBytes": 318630,
+      "monthBytes": 48102662,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 172549,
+      "monthBytesIfCached": 8852486
+    },
+    {
+      "name": "ESPN",
+      "coldBytes": 5859794,
+      "warmBytes": 272628,
+      "monthBytes": 46481366,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 107353,
+      "monthBytesIfCached": 31314507
+    },
+    {
+      "name": "Netflix",
+      "coldBytes": 3578333,
+      "warmBytes": 226135,
+      "monthBytes": 37272448,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 172239,
+      "monthBytesIfCached": 33333186
+    },
+    {
+      "name": "Airbnb",
+      "coldBytes": 6182737,
+      "warmBytes": 190852,
+      "monthBytes": 34619685,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 98458,
+      "monthBytesIfCached": 19704189
+    },
+    {
+      "name": "TikTok",
+      "coldBytes": 4580118,
+      "warmBytes": 189954,
+      "monthBytes": 32883264,
+      "topRepeatType": "Fetch",
+      "topRepeatBytes": 56237,
+      "monthBytesIfCached": 30696242
+    },
+    {
+      "name": "IKEA",
+      "coldBytes": 1816749,
+      "warmBytes": 198799,
+      "monthBytes": 31437800,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 193406,
+      "monthBytesIfCached": 30657040
+    },
+    {
+      "name": "YouTube",
+      "coldBytes": 1340085,
+      "warmBytes": 193523,
+      "monthBytes": 30175012,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 120220,
+      "monthBytesIfCached": 12260444
+    },
+    {
+      "name": "Notion",
+      "coldBytes": 3262329,
+      "warmBytes": 177822,
+      "monthBytes": 29757807,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 132865,
+      "monthBytesIfCached": 9534186
+    },
+    {
+      "name": "PayPal",
+      "coldBytes": 2059916,
+      "warmBytes": 175508,
+      "monthBytes": 28210608,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 133253,
+      "monthBytesIfCached": 26912222
+    },
+    {
+      "name": "The Guardian",
+      "coldBytes": 2599003,
+      "warmBytes": 140421,
+      "monthBytes": 23521732,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 131824,
+      "monthBytesIfCached": 3800539
+    },
+    {
+      "name": "ChatGPT",
+      "coldBytes": 1110958,
+      "warmBytes": 150060,
+      "monthBytes": 23469898,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 74799,
+      "monthBytesIfCached": 23469898
+    },
+    {
+      "name": "Zoom",
+      "coldBytes": 4315039,
+      "warmBytes": 128207,
+      "monthBytes": 23417882,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 98885,
+      "monthBytesIfCached": 7034587
+    },
+    {
+      "name": "GitHub",
+      "coldBytes": 4643163,
+      "warmBytes": 122631,
+      "monthBytes": 22915182,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 122140,
+      "monthBytesIfCached": 22915182
+    },
+    {
+      "name": "Uber",
+      "coldBytes": 3357267,
+      "warmBytes": 126836,
+      "monthBytes": 22255831,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 108068,
+      "monthBytesIfCached": 22255831
+    },
+    {
+      "name": "Instagram",
+      "coldBytes": 2550169,
+      "warmBytes": 124767,
+      "monthBytes": 21140452,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 116319,
+      "monthBytesIfCached": 21140452
+    },
+    {
+      "name": "Spotify",
+      "coldBytes": 5200541,
+      "warmBytes": 104583,
+      "monthBytes": 20783408,
+      "topRepeatType": "Image",
+      "topRepeatBytes": 53851,
+      "monthBytesIfCached": 12658885
+    },
+    {
+      "name": "Twitch",
+      "coldBytes": 3610867,
+      "warmBytes": 92171,
+      "monthBytes": 17344346,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 75219,
+      "monthBytesIfCached": 17245410
+    },
+    {
+      "name": "IMDb",
+      "coldBytes": 452889,
+      "warmBytes": 104718,
+      "monthBytes": 16055871,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 99450,
+      "monthBytesIfCached": 1237821
+    },
+    {
+      "name": "BBC News",
+      "coldBytes": 2127379,
+      "warmBytes": 88088,
+      "monthBytes": 15252491,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 68474,
+      "monthBytesIfCached": 14754831
+    },
+    {
+      "name": "Bing",
+      "coldBytes": 856144,
+      "warmBytes": 94816,
+      "monthBytes": 14983728,
+      "topRepeatType": "Image",
+      "topRepeatBytes": 52562,
+      "monthBytesIfCached": 7151990
+    },
+    {
+      "name": "Microsoft",
+      "coldBytes": 10802920,
+      "warmBytes": 26661,
+      "monthBytes": 14775409,
+      "topRepeatType": "XHR",
+      "topRepeatBytes": 14250,
+      "monthBytesIfCached": 13009312
+    },
+    {
+      "name": "Duolingo",
+      "coldBytes": 3793592,
+      "warmBytes": 53687,
+      "monthBytes": 11792955,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 32922,
+      "monthBytesIfCached": 10894932
+    },
+    {
+      "name": "Facebook",
+      "coldBytes": 824962,
+      "warmBytes": 58600,
+      "monthBytes": 9556362,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 45486,
+      "monthBytesIfCached": 9223645
+    },
+    {
+      "name": "DuckDuckGo",
+      "coldBytes": 1616474,
+      "warmBytes": 8089,
+      "monthBytes": 2821735,
+      "topRepeatType": "Ping",
+      "topRepeatBytes": 5815,
+      "monthBytesIfCached": 2821735
+    }
+  ],
+  "workTimeSpread": {
+    "all": 46200.65789473685,
+    "withoutMostExpensive": 1857.9212598425195,
+    "mostExpensive": "Zimbabwe",
+    "secondMostExpensive": "Tanzania",
+    "cheapest": "Israel"
+  },
   "countries": [
     {
       "name": "Zimbabwe",

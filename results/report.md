@@ -106,5 +106,45 @@ The median site's first visit is 3.58 MB; the heaviest, CNN, is 14.63 MB. The me
 | Italy | $0.09 | 16 s | 0.03¢ · < 0.1 s | 0.12¢ · 0.2 s | $78.43 |
 | Israel | $0.02 | 2.7 s | < 0.01¢ · < 0.1 s | 0.03¢ · < 0.1 s | $17.43 |
 
+1 GB costs 46,201× more work in Zimbabwe than in Israel. Without Zimbabwe, the gap is 1,858× (Tanzania against Israel).
+
+## What the bytes are
+
+| Resource type | Share of first-visit bytes |
+|---|---:|
+| Script | 45.3% |
+| Image | 21.5% |
+| Media | 10.6% |
+| Font | 6.2% |
+| Fetch | 6.1% |
+| Document | 4.2% |
+| Stylesheet | 2.7% |
+| XHR | 2.6% |
+| Other | 0.8% |
+| Everything else | 0.1% |
+
+JavaScript was more than half of the first visit on 21 of 35 sites. The median site downloaded 1.46 MB of it. In total, 35.29 MB of JavaScript didn't run during load.
+Video and audio over 100 KB on a first visit: CNN 11.38 MB, Amazon 1.82 MB, Airbnb 0.25 MB, TikTok 0.98 MB. Without it, CNN would be 3.25 MB instead of 14.63 MB (78% less).
+
+## A month of use
+
+A month is 5 visits a day for 30 days: 1 first visit and 149 repeat visits. Repeat visits are 94% of all those bytes (75% at one visit a day).
+The last column is an upper bound: the month if every script, image, font, stylesheet, media byte on the repeat visit came from cache.
+
+| Site | First visit | Repeat visit | A month | Most re-downloaded on a repeat visit | A month, if cacheable types were cached |
+|---|---:|---:|---:|---|---:|
+| Figma | 5.78 MB | 2.69 MB | 406 MB | 2.58 MB XHR | 406 MB |
+| Yahoo | 5.74 MB | 2.01 MB | 305 MB | 1.16 MB Script | 105 MB |
+| Nike | 5.84 MB | 1.04 MB | 161 MB | 0.60 MB Image | 18 MB |
+| WhatsApp | 1.69 MB | 0.97 MB | 146 MB | 0.92 MB Image | 10 MB |
+| CNN | 14.63 MB | 0.63 MB | 108 MB | 0.62 MB Document | 107 MB |
+| Google | 0.93 MB | 0.69 MB | 104 MB | 0.68 MB Script | 4 MB |
+| Pinterest | 7.19 MB | 0.64 MB | 103 MB | 0.47 MB Document | 88 MB |
+| Booking.com | 6.61 MB | 0.59 MB | 94 MB | 0.33 MB Script | 43 MB |
+| Amazon | 6.27 MB | 0.48 MB | 77 MB | 0.30 MB XHR | 53 MB |
+| Apple | 1.73 MB | 0.42 MB | 64 MB | 0.38 MB Script | 2 MB |
+| Walmart | 3.63 MB | 0.40 MB | 64 MB | 0.28 MB Script | 21 MB |
+| Wikipedia | 0.63 MB | 0.32 MB | 48 MB | 0.17 MB Script | 9 MB |
+
 
 
