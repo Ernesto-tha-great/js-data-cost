@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 562" width="1200" height="562" role="img" aria-labelledby="t d">
+<title id="t">First-visit download size of 35 popular sites on a phone</title>
+<desc id="d">Median 3.58 MB. Heaviest: CNN at 14.63 MB. JavaScript is shown separately from everything else.</desc>
+<style>
+  svg { --surface:#fcfcfb; --ink:#0b0b0b; --ink-2:#52514e; --ink-3:#8a8983; --rule:#e4e3de; --js:#2a78d6; --other:#c9c8c2; --bar:#eb6834; }
+  @media (prefers-color-scheme: dark) { svg { --surface:#1a1a19; --ink:#ffffff; --ink-2:#c3c2b7; --ink-3:#8f8e86; --rule:#383835; --js:#3987e5; --other:#4a4a46; --bar:#d95926; } }
+  text { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; fill: var(--ink); }
+  .h1 { font-size: 22px; font-weight: 700; } .sub { font-size: 14px; fill: var(--ink-2); }
+  .lbl { font-size: 12.5px; fill: var(--ink-2); } .val { font-size: 12px; font-weight: 600; } .note { font-size: 12px; fill: var(--ink-3); }
+</style>
+<rect width="100%" height="100%" fill="var(--surface)"/>
+<text class="h1" x="40" y="44">What a first visit downloads</text>
+<text class="sub" x="40" y="68">Bytes over the network for one page load on an emulated phone, empty cache, no scrolling. Median: 3.58 MB.</text>
+<rect x="40" y="82" width="14" height="14" rx="3" fill="var(--js)"/><text class="lbl" x="60" y="94">JavaScript</text>
+<rect x="150" y="82" width="14" height="14" rx="3" fill="var(--other)"/><text class="lbl" x="170" y="94">Everything else</text>
+<text class="lbl" x="40" y="130">CNN</text>
+<rect x="190" y="119" width="27.1" height="14" fill="var(--js)"/>
+<rect x="218.1" y="119" width="271.9" height="14" fill="var(--other)"/>
+<text class="val" x="498.0" y="130">14.63 MB</text>
+<text class="lbl" x="40" y="152">Microsoft</text>
+<rect x="190" y="141" width="64.4" height="14" fill="var(--js)"/>
+<rect x="255.4" y="141" width="156.2" height="14" fill="var(--other)"/>
+<text class="val" x="419.5" y="152">10.80 MB</text>
+<text class="lbl" x="40" y="174">Pinterest</text>
+<rect x="190" y="163" width="62.3" height="14" fill="var(--js)"/>
+<rect x="253.3" y="163" width="84.1" height="14" fill="var(--other)"/>
+<text class="val" x="345.4" y="174">7.19 MB</text>
+<text class="lbl" x="40" y="196">Booking.com</text>
+<rect x="190" y="185" width="100.6" height="14" fill="var(--js)"/>
+<rect x="291.6" y="185" width="34.0" height="14" fill="var(--other)"/>
+<text class="val" x="333.6" y="196">6.61 MB</text>
+<text class="lbl" x="40" y="218">Amazon</text>
+<rect x="190" y="207" width="19.5" height="14" fill="var(--js)"/>
+<rect x="210.5" y="207" width="108.2" height="14" fill="var(--other)"/>
+<text class="val" x="326.7" y="218">6.27 MB</text>
+<text class="lbl" x="40" y="240">Airbnb</text>
+<rect x="190" y="229" width="70.7" height="14" fill="var(--js)"/>
+<rect x="261.7" y="229" width="55.1" height="14" fill="var(--other)"/>
+<text class="val" x="324.8" y="240">6.18 MB</text>
+<text class="lbl" x="40" y="262">ESPN</text>
+<rect x="190" y="251" width="64.3" height="14" fill="var(--js)"/>
+<rect x="255.3" y="251" width="54.9" height="14" fill="var(--other)"/>
+<text class="val" x="318.2" y="262">5.86 MB</text>
+<text class="lbl" x="40" y="284">Nike</text>
+<rect x="190" y="273" width="96.7" height="14" fill="var(--js)"/>
+<rect x="287.7" y="273" width="22.1" height="14" fill="var(--other)"/>
+<text class="val" x="317.8" y="284">5.84 MB</text>
+<text class="lbl" x="40" y="306">Figma</text>
+<rect x="190" y="295" width="28.4" height="14" fill="var(--js)"/>
+<rect x="219.4" y="295" width="89.2" height="14" fill="var(--other)"/>
+<text class="val" x="316.5" y="306">5.78 MB</text>
+<text class="lbl" x="40" y="328">Yahoo</text>
+<rect x="190" y="317" width="72.6" height="14" fill="var(--js)"/>
+<rect x="263.6" y="317" width="44.2" height="14" fill="var(--other)"/>
+<text class="val" x="315.8" y="328">5.74 MB</text>
+<text class="lbl" x="40" y="350">Spotify</text>
+<rect x="190" y="339" width="32.4" height="14" fill="var(--js)"/>
+<rect x="223.4" y="339" width="73.3" height="14" fill="var(--other)"/>
+<text class="val" x="304.6" y="350">5.20 MB</text>
+<text class="lbl" x="40" y="372">GitHub</text>
+<rect x="190" y="361" width="38.0" height="14" fill="var(--js)"/>
+<rect x="229.0" y="361" width="56.2" height="14" fill="var(--other)"/>
+<text class="val" x="293.2" y="372">4.64 MB</text>
+<text class="lbl" x="40" y="394">TikTok</text>
+<rect x="190" y="383" width="51.3" height="14" fill="var(--js)"/>
+<rect x="242.3" y="383" width="41.7" height="14" fill="var(--other)"/>
+<text class="val" x="291.9" y="394">4.58 MB</text>
+<text class="lbl" x="40" y="416">Zoom</text>
+<rect x="190" y="405" width="51.0" height="14" fill="var(--js)"/>
+<rect x="242.0" y="405" width="36.5" height="14" fill="var(--other)"/>
+<text class="val" x="286.5" y="416">4.32 MB</text>
+<text class="lbl" x="40" y="438">Duolingo</text>
+<rect x="190" y="427" width="46.8" height="14" fill="var(--js)"/>
+<rect x="237.8" y="427" width="30.0" height="14" fill="var(--other)"/>
+<text class="val" x="275.8" y="438">3.79 MB</text>
+<text class="lbl" x="40" y="460">Walmart</text>
+<rect x="190" y="449" width="59.0" height="14" fill="var(--js)"/>
+<rect x="250.0" y="449" width="14.4" height="14" fill="var(--other)"/>
+<text class="val" x="272.4" y="460">3.63 MB</text>
+<text class="lbl" x="40" y="482">Twitch</text>
+<rect x="190" y="471" width="17.1" height="14" fill="var(--js)"/>
+<rect x="208.1" y="471" width="55.9" height="14" fill="var(--other)"/>
+<text class="val" x="272.0" y="482">3.61 MB</text>
+<text class="lbl" x="40" y="504">Netflix</text>
+<rect x="190" y="493" width="39.7" height="14" fill="var(--js)"/>
+<rect x="230.7" y="493" width="32.7" height="14" fill="var(--other)"/>
+<text class="val" x="271.4" y="504">3.58 MB</text>
+<text class="lbl" x="620" y="130">Uber</text>
+<rect x="770" y="119" width="29.9" height="14" fill="var(--js)"/>
+<rect x="800.9" y="119" width="38.0" height="14" fill="var(--other)"/>
+<text class="val" x="846.8" y="130">3.36 MB</text>
+<text class="lbl" x="620" y="152">Notion</text>
+<rect x="770" y="141" width="45.7" height="14" fill="var(--js)"/>
+<rect x="816.7" y="141" width="20.2" height="14" fill="var(--other)"/>
+<text class="val" x="844.9" y="152">3.26 MB</text>
+<text class="lbl" x="620" y="174">The Guardian</text>
+<rect x="770" y="163" width="41.4" height="14" fill="var(--js)"/>
+<rect x="812.4" y="163" width="10.9" height="14" fill="var(--other)"/>
+<text class="val" x="831.3" y="174">2.60 MB</text>
+<text class="lbl" x="620" y="196">Instagram</text>
+<rect x="770" y="185" width="45.2" height="14" fill="var(--js)"/>
+<rect x="816.2" y="185" width="6.1" height="14" fill="var(--other)"/>
+<text class="val" x="830.3" y="196">2.55 MB</text>
+<text class="lbl" x="620" y="218">BBC News</text>
+<rect x="770" y="207" width="27.8" height="14" fill="var(--js)"/>
+<rect x="798.8" y="207" width="14.8" height="14" fill="var(--other)"/>
+<text class="val" x="821.6" y="218">2.13 MB</text>
+<text class="lbl" x="620" y="240">PayPal</text>
+<rect x="770" y="229" width="26.0" height="14" fill="var(--js)"/>
+<rect x="797.0" y="229" width="15.3" height="14" fill="var(--other)"/>
+<text class="val" x="820.2" y="240">2.06 MB</text>
+<text class="lbl" x="620" y="262">IKEA</text>
+<rect x="770" y="251" width="6.2" height="14" fill="var(--js)"/>
+<rect x="777.2" y="251" width="30.0" height="14" fill="var(--other)"/>
+<text class="val" x="815.3" y="262">1.82 MB</text>
+<text class="lbl" x="620" y="284">Apple</text>
+<rect x="770" y="273" width="8.7" height="14" fill="var(--js)"/>
+<rect x="779.7" y="273" width="25.7" height="14" fill="var(--other)"/>
+<text class="val" x="813.4" y="284">1.73 MB</text>
+<text class="lbl" x="620" y="306">WhatsApp</text>
+<rect x="770" y="295" width="8.0" height="14" fill="var(--js)"/>
+<rect x="779.0" y="295" width="25.7" height="14" fill="var(--other)"/>
+<text class="val" x="812.7" y="306">1.69 MB</text>
+<text class="lbl" x="620" y="328">DuckDuckGo</text>
+<rect x="770" y="317" width="10.5" height="14" fill="var(--js)"/>
+<rect x="781.5" y="317" width="21.6" height="14" fill="var(--other)"/>
+<text class="val" x="811.1" y="328">1.62 MB</text>
+<text class="lbl" x="620" y="350">YouTube</text>
+<rect x="770" y="339" width="23.0" height="14" fill="var(--js)"/>
+<rect x="794.0" y="339" width="3.5" height="14" fill="var(--other)"/>
+<text class="val" x="805.5" y="350">1.34 MB</text>
+<text class="lbl" x="620" y="372">ChatGPT</text>
+<rect x="770" y="361" width="17.0" height="14" fill="var(--js)"/>
+<rect x="788.0" y="361" width="4.8" height="14" fill="var(--other)"/>
+<text class="val" x="800.8" y="372">1.11 MB</text>
+<text class="lbl" x="620" y="394">Google</text>
+<rect x="770" y="383" width="15.8" height="14" fill="var(--js)"/>
+<rect x="786.8" y="383" width="2.3" height="14" fill="var(--other)"/>
+<text class="val" x="797.1" y="394">0.93 MB</text>
+<text class="lbl" x="620" y="416">Bing</text>
+<rect x="770" y="405" width="1.0" height="14" fill="var(--js)"/>
+<rect x="771.8" y="405" width="15.7" height="14" fill="var(--other)"/>
+<text class="val" x="795.6" y="416">0.86 MB</text>
+<text class="lbl" x="620" y="438">Facebook</text>
+<rect x="770" y="427" width="11.2" height="14" fill="var(--js)"/>
+<rect x="782.2" y="427" width="4.7" height="14" fill="var(--other)"/>
+<text class="val" x="794.9" y="438">0.82 MB</text>
+<text class="lbl" x="620" y="460">Wikipedia</text>
+<rect x="770" y="449" width="7.1" height="14" fill="var(--js)"/>
+<rect x="778.1" y="449" width="4.7" height="14" fill="var(--other)"/>
+<text class="val" x="790.9" y="460">0.63 MB</text>
+<text class="lbl" x="620" y="482">IMDb</text>
+<rect x="770" y="471" width="8.4" height="14" fill="var(--js)"/>
+<rect x="779.4" y="471" width="0.0" height="14" fill="var(--other)"/>
+<text class="val" x="787.3" y="482">0.45 MB</text>
+<text class="note" x="40" y="544">Measured 2026-10-08 from GitHub Actions runner (ubuntu-latest). Source: npm run measure.</text>
+</svg>

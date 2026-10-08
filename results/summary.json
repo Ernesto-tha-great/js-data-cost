@@ -1,0 +1,535 @@
+{
+  "measuredAt": "2026-10-08T02:11:06.830Z",
+  "priceEdition": "2023",
+  "sitesMeasured": 50,
+  "sitesUsable": 35,
+  "excluded": [
+    {
+      "name": "X",
+      "reason": "blocked (403, \"\")"
+    },
+    {
+      "name": "Reddit",
+      "reason": "blocked (403, \"\")"
+    },
+    {
+      "name": "LinkedIn",
+      "reason": "blocked (403, \"Attention Required! | Cloudflare\")"
+    },
+    {
+      "name": "eBay",
+      "reason": "blocked (403, \"Error Page | eBay\")"
+    },
+    {
+      "name": "AliExpress",
+      "reason": "page.goto: Timeout 45000ms exceeded."
+    },
+    {
+      "name": "Etsy",
+      "reason": "blocked (403, \"etsy.com\")"
+    },
+    {
+      "name": "Tripadvisor",
+      "reason": "blocked (403, \"tripadvisor.com\")"
+    },
+    {
+      "name": "The New York Times",
+      "reason": "blocked (403, \"nytimes.com\")"
+    },
+    {
+      "name": "Reuters",
+      "reason": "blocked (401, \"reuters.com\")"
+    },
+    {
+      "name": "The Weather Channel",
+      "reason": "blocked (429, \"Vercel Security Checkpoint\")"
+    },
+    {
+      "name": "Stack Overflow",
+      "reason": "blocked (403, \"Just a moment...\")"
+    },
+    {
+      "name": "Medium",
+      "reason": "blocked (403, \"Just a moment...\")"
+    },
+    {
+      "name": "Quora",
+      "reason": "blocked (403, \"Just a moment...\")"
+    },
+    {
+      "name": "Canva",
+      "reason": "blocked (403, \"Just a moment...\")"
+    },
+    {
+      "name": "Zara",
+      "reason": "blocked (403, \"Access Denied\")"
+    }
+  ],
+  "medianColdBytes": 3578333,
+  "medianWarmBytes": 189954,
+  "heaviest": {
+    "name": "CNN",
+    "coldBytes": 14628873,
+    "warmBytes": 627123,
+    "jsBytes": 1321300,
+    "jsUnused": 0.709435534052734,
+    "requests": 66
+  },
+  "lightest": {
+    "name": "IMDb",
+    "coldBytes": 452889,
+    "warmBytes": 104718,
+    "jsBytes": 411399,
+    "jsUnused": 0.5313456522770024,
+    "requests": 14
+  },
+  "jsShareOfBytes": 0.45300813638556775,
+  "unusedJsShareOfBytes": 0.2571716512422281,
+  "countries": [
+    {
+      "name": "Zimbabwe",
+      "usdPerGb": 43.75,
+      "gni": 2660,
+      "gniYear": "2025",
+      "firstVisit": 0.1458004757296294,
+      "month": 1.2990224233362824,
+      "shareOfIncome": 0.005860251533847891
+    },
+    {
+      "name": "Tanzania",
+      "usdPerGb": 0.84,
+      "gni": 1270,
+      "gniYear": "2025",
+      "firstVisit": 0.002799369134008884,
+      "month": 0.02494123052805662,
+      "shareOfIncome": 0.0002356651703438421
+    },
+    {
+      "name": "Ethiopia",
+      "usdPerGb": 0.68,
+      "gni": 1110,
+      "gniYear": "2025",
+      "firstVisit": 0.0022661559656262397,
+      "month": 0.020190519951283934,
+      "shareOfIncome": 0.0002182758913652317
+    },
+    {
+      "name": "South Africa",
+      "usdPerGb": 1.81,
+      "gni": 6270,
+      "gniYear": "2025",
+      "firstVisit": 0.006031973967328668,
+      "month": 0.053742413399741056,
+      "shareOfIncome": 0.00010285629358802116
+    },
+    {
+      "name": "Nigeria",
+      "usdPerGb": 0.39,
+      "gni": 1360,
+      "gniYear": "2025",
+      "firstVisit": 0.0012997070979326964,
+      "month": 0.011579857030883432,
+      "shareOfIncome": 0.00010217520909603029
+    },
+    {
+      "name": "Nepal",
+      "usdPerGb": 0.43,
+      "gni": 1570,
+      "gniYear": "2025",
+      "firstVisit": 0.0014330103900283575,
+      "month": 0.012767534675076605,
+      "shareOfIncome": 0.00009758625229357913
+    },
+    {
+      "name": "Kenya",
+      "usdPerGb": 0.59,
+      "gni": 2200,
+      "gniYear": "2025",
+      "firstVisit": 0.001966223558411002,
+      "month": 0.017518245251849293,
+      "shareOfIncome": 0.00009555406501008705
+    },
+    {
+      "name": "Egypt",
+      "usdPerGb": 0.65,
+      "gni": 3260,
+      "gniYear": "2025",
+      "firstVisit": 0.002166178496554494,
+      "month": 0.019299761718139054,
+      "shareOfIncome": 0.00007104206767413148
+    },
+    {
+      "name": "Ghana",
+      "usdPerGb": 0.4,
+      "gni": 2630,
+      "gniYear": "2025",
+      "firstVisit": 0.0013330329209566118,
+      "month": 0.011876776441931726,
+      "shareOfIncome": 0.00005419061494417518
+    },
+    {
+      "name": "Mexico",
+      "usdPerGb": 2.03,
+      "gni": 13730,
+      "gniYear": "2025",
+      "firstVisit": 0.006765142073854803,
+      "month": 0.0602746404428035,
+      "shareOfIncome": 0.00005267994794709701
+    },
+    {
+      "name": "Morocco",
+      "usdPerGb": 0.63,
+      "gni": 4360,
+      "gniYear": "2025",
+      "firstVisit": 0.0020995268505066634,
+      "month": 0.018705922896042466,
+      "shareOfIncome": 0.00005148419145699761
+    },
+    {
+      "name": "South Korea",
+      "usdPerGb": 5.01,
+      "gni": 37880,
+      "gniYear": "2025",
+      "firstVisit": 0.01669623733498156,
+      "month": 0.14875662493519484,
+      "shareOfIncome": 0.000047124590792564364
+    },
+    {
+      "name": "New Zealand",
+      "usdPerGb": 5.89,
+      "gni": 46630,
+      "gniYear": "2025",
+      "firstVisit": 0.019628909761086104,
+      "month": 0.17488553310744465,
+      "shareOfIncome": 0.00004500592745634432
+    },
+    {
+      "name": "Philippines",
+      "usdPerGb": 0.59,
+      "gni": 4850,
+      "gniYear": "2025",
+      "firstVisit": 0.001966223558411002,
+      "month": 0.017518245251849293,
+      "shareOfIncome": 0.00004334411196333845
+    },
+    {
+      "name": "Canada",
+      "usdPerGb": 5.37,
+      "gni": 56420,
+      "gniYear": "2025",
+      "firstVisit": 0.017895966963842512,
+      "month": 0.1594457237329334,
+      "shareOfIncome": 0.00003391259632745836
+    },
+    {
+      "name": "Japan",
+      "usdPerGb": 3.48,
+      "gni": 38340,
+      "gniYear": "2025",
+      "firstVisit": 0.011597386412322521,
+      "month": 0.103327955044806,
+      "shareOfIncome": 0.000032340518010893896
+    },
+    {
+      "name": "United Arab Emirates",
+      "usdPerGb": 4.61,
+      "gni": 51550,
+      "gniYear": "2024",
+      "firstVisit": 0.01536320441402495,
+      "month": 0.13687984849326312,
+      "shareOfIncome": 0.000031863398291351265
+    },
+    {
+      "name": "Bangladesh",
+      "usdPerGb": 0.23,
+      "gni": 2840,
+      "gniYear": "2025",
+      "firstVisit": 0.0007664939295500518,
+      "month": 0.0068291464541107415,
+      "shareOfIncome": 0.00002885554839765102
+    },
+    {
+      "name": "Pakistan",
+      "usdPerGb": 0.12,
+      "gni": 1500,
+      "gniYear": "2025",
+      "firstVisit": 0.00039990987628698346,
+      "month": 0.0035630329325795173,
+      "shareOfIncome": 0.00002850426346063614
+    },
+    {
+      "name": "Argentina",
+      "usdPerGb": 1.11,
+      "gni": 14650,
+      "gniYear": "2025",
+      "firstVisit": 0.0036991663556545976,
+      "month": 0.03295805462636054,
+      "shareOfIncome": 0.000026996358738315804
+    },
+    {
+      "name": "United States",
+      "usdPerGb": 6,
+      "gni": 88810,
+      "gniYear": "2025",
+      "firstVisit": 0.019995493814349174,
+      "month": 0.17815164662897587,
+      "shareOfIncome": 0.00002407183604940559
+    },
+    {
+      "name": "Switzerland",
+      "usdPerGb": 7.29,
+      "gni": 110330,
+      "gniYear": "2025",
+      "firstVisit": 0.024294524984434247,
+      "month": 0.21645425065420568,
+      "shareOfIncome": 0.000023542563290587042
+    },
+    {
+      "name": "Portugal",
+      "usdPerGb": 1.79,
+      "gni": 29930,
+      "gniYear": "2025",
+      "firstVisit": 0.005965322321280837,
+      "month": 0.05314857457764447,
+      "shareOfIncome": 0.000021309151183820036
+    },
+    {
+      "name": "Vietnam",
+      "usdPerGb": 0.29,
+      "gni": 4970,
+      "gniYear": "2025",
+      "firstVisit": 0.0009664488676935434,
+      "month": 0.0086106629204005,
+      "shareOfIncome": 0.00002079033300700322
+    },
+    {
+      "name": "India",
+      "usdPerGb": 0.16,
+      "gni": 2760,
+      "gniYear": "2025",
+      "firstVisit": 0.0005332131683826447,
+      "month": 0.0047507105767726895,
+      "shareOfIncome": 0.00002065526337727256
+    },
+    {
+      "name": "Indonesia",
+      "usdPerGb": 0.28,
+      "gni": 5120,
+      "gniYear": "2025",
+      "firstVisit": 0.0009331230446696282,
+      "month": 0.008313743509352208,
+      "shareOfIncome": 0.000019485336350044236
+    },
+    {
+      "name": "Sri Lanka",
+      "usdPerGb": 0.25,
+      "gni": 4670,
+      "gniYear": "2025",
+      "firstVisit": 0.0008331455755978823,
+      "month": 0.007422985276207328,
+      "shareOfIncome": 0.00001907405210160341
+    },
+    {
+      "name": "Peru",
+      "usdPerGb": 0.45,
+      "gni": 8430,
+      "gniYear": "2025",
+      "firstVisit": 0.0014996620360761882,
+      "month": 0.01336137349717319,
+      "shareOfIncome": 0.00001901974875042447
+    },
+    {
+      "name": "Thailand",
+      "usdPerGb": 0.41,
+      "gni": 7690,
+      "gniYear": "2025",
+      "firstVisit": 0.001366358743980527,
+      "month": 0.012173695852980016,
+      "shareOfIncome": 0.000018996664530007826
+    },
+    {
+      "name": "Ukraine",
+      "usdPerGb": 0.27,
+      "gni": 5510,
+      "gniYear": "2025",
+      "firstVisit": 0.0008997972216457129,
+      "month": 0.008016824098303914,
+      "shareOfIncome": 0.00001745950801808475
+    },
+    {
+      "name": "Norway",
+      "usdPerGb": 4.07,
+      "gni": 97310,
+      "gniYear": "2025",
+      "firstVisit": 0.013563609970733524,
+      "month": 0.12084620029665531,
+      "shareOfIncome": 0.000014902419109648173
+    },
+    {
+      "name": "Saudi Arabia",
+      "usdPerGb": 1.49,
+      "gni": 36070,
+      "gniYear": "2025",
+      "firstVisit": 0.004965547630563378,
+      "month": 0.044240992246195675,
+      "shareOfIncome": 0.000014718378346391685
+    },
+    {
+      "name": "Brazil",
+      "usdPerGb": 0.4,
+      "gni": 10550,
+      "gniYear": "2025",
+      "firstVisit": 0.0013330329209566118,
+      "month": 0.011876776441931726,
+      "shareOfIncome": 0.000013509129602197224
+    },
+    {
+      "name": "Chile",
+      "usdPerGb": 0.64,
+      "gni": 16960,
+      "gniYear": "2025",
+      "firstVisit": 0.0021328526735305787,
+      "month": 0.019002842307090758,
+      "shareOfIncome": 0.000013445407292752895
+    },
+    {
+      "name": "Sweden",
+      "usdPerGb": 2.33,
+      "gni": 63010,
+      "gniYear": "2025",
+      "firstVisit": 0.007764916764572263,
+      "month": 0.0691822227742523,
+      "shareOfIncome": 0.0000131754748974929
+    },
+    {
+      "name": "Germany",
+      "usdPerGb": 2.14,
+      "gni": 60200,
+      "gniYear": "2025",
+      "firstVisit": 0.007131726127117872,
+      "month": 0.06354075396433473,
+      "shareOfIncome": 0.000012665931022790975
+    },
+    {
+      "name": "Turkey",
+      "usdPerGb": 0.44,
+      "gni": 16300,
+      "gniYear": "2025",
+      "firstVisit": 0.0014663362130522728,
+      "month": 0.013064454086124897,
+      "shareOfIncome": 0.000009618003008190109
+    },
+    {
+      "name": "China",
+      "usdPerGb": 0.38,
+      "gni": 14230,
+      "gniYear": "2025",
+      "firstVisit": 0.001266381274908781,
+      "month": 0.011282937619835138,
+      "shareOfIncome": 0.000009514775224035253
+    },
+    {
+      "name": "Colombia",
+      "usdPerGb": 0.2,
+      "gni": 7900,
+      "gniYear": "2025",
+      "firstVisit": 0.0006665164604783059,
+      "month": 0.005938388220965863,
+      "shareOfIncome": 0.000009020336538175994
+    },
+    {
+      "name": "Malaysia",
+      "usdPerGb": 0.28,
+      "gni": 12380,
+      "gniYear": "2025",
+      "firstVisit": 0.0009331230446696282,
+      "month": 0.008313743509352208,
+      "shareOfIncome": 0.000008058555905672575
+    },
+    {
+      "name": "Ireland",
+      "usdPerGb": 1.5,
+      "gni": 87360,
+      "gniYear": "2025",
+      "firstVisit": 0.004998873453587294,
+      "month": 0.04453791165724397,
+      "shareOfIncome": 0.000006117845007863182
+    },
+    {
+      "name": "Poland",
+      "usdPerGb": 0.37,
+      "gni": 25520,
+      "gniYear": "2025",
+      "firstVisit": 0.0012330554518848657,
+      "month": 0.010986018208786846,
+      "shareOfIncome": 0.000005165839283128611
+    },
+    {
+      "name": "Spain",
+      "usdPerGb": 0.48,
+      "gni": 37120,
+      "gniYear": "2025",
+      "firstVisit": 0.0015996395051479338,
+      "month": 0.01425213173031807,
+      "shareOfIncome": 0.000004607370171439031
+    },
+    {
+      "name": "United Kingdom",
+      "usdPerGb": 0.62,
+      "gni": 54550,
+      "gniYear": "2025",
+      "firstVisit": 0.002066201027482748,
+      "month": 0.018409003484994173,
+      "shareOfIncome": 0.000004049643296424017
+    },
+    {
+      "name": "Singapore",
+      "usdPerGb": 0.63,
+      "gni": 81760,
+      "gniYear": "2025",
+      "firstVisit": 0.0020995268505066634,
+      "month": 0.018705922896042466,
+      "shareOfIncome": 0.000002745487704898601
+    },
+    {
+      "name": "Australia",
+      "usdPerGb": 0.44,
+      "gni": 64120,
+      "gniYear": "2025",
+      "firstVisit": 0.0014663362130522728,
+      "month": 0.013064454086124897,
+      "shareOfIncome": 0.0000024450007647145783
+    },
+    {
+      "name": "France",
+      "usdPerGb": 0.2,
+      "gni": 48630,
+      "gniYear": "2025",
+      "firstVisit": 0.0006665164604783059,
+      "month": 0.005938388220965863,
+      "shareOfIncome": 0.0000014653641507627053
+    },
+    {
+      "name": "Italy",
+      "usdPerGb": 0.09,
+      "gni": 42080,
+      "gniYear": "2025",
+      "firstVisit": 0.0002999324072152376,
+      "month": 0.002672274699434638,
+      "shareOfIncome": 7.620555226524633e-7
+    },
+    {
+      "name": "Israel",
+      "usdPerGb": 0.02,
+      "gni": 56180,
+      "gniYear": "2025",
+      "firstVisit": 0.00006665164604783058,
+      "month": 0.0005938388220965862,
+      "shareOfIncome": 1.268434650259707e-7
+    }
+  ],
+  "missingPrices": [
+    "Netherlands"
+  ],
+  "missingIncome": []
+}
