@@ -14,7 +14,8 @@
     "measure": "tsx scripts/measure.ts",
     "report": "tsx scripts/report.ts",
     "test": "node --import tsx --test test/*.test.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "budget": "tsx scripts/budget.ts"
   },
   "dependencies": {
     "playwright": "1.56"

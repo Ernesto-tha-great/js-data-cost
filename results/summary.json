@@ -1,6 +1,7 @@
 {
   "measuredAt": "2026-10-08T02:11:06.830Z",
   "priceEdition": "2023",
+  "workHoursPerYear": 2080,
   "sitesMeasured": 50,
   "sitesUsable": 35,
   "excluded": [
@@ -67,12 +68,14 @@
   ],
   "medianColdBytes": 3578333,
   "medianWarmBytes": 189954,
+  "medianUnusedJsBytes": 935729.5347664524,
   "heaviest": {
     "name": "CNN",
     "coldBytes": 14628873,
     "warmBytes": 627123,
     "jsBytes": 1321300,
     "jsUnused": 0.709435534052734,
+    "jsUnusedBytes": 937377.1711438774,
     "requests": 66
   },
   "lightest": {
@@ -81,455 +84,614 @@
     "warmBytes": 104718,
     "jsBytes": 411399,
     "jsUnused": 0.5313456522770024,
+    "jsUnusedBytes": 218595.0700011065,
     "requests": 14
   },
   "jsShareOfBytes": 0.45300813638556775,
   "unusedJsShareOfBytes": 0.2571716512422281,
+  "unusedJsShareOfJs": 0.5676976429035752,
   "countries": [
     {
       "name": "Zimbabwe",
       "usdPerGb": 43.75,
       "gni": 2660,
       "gniYear": "2025",
-      "firstVisit": 0.1458004757296294,
-      "month": 1.2990224233362824,
-      "shareOfIncome": 0.005860251533847891
+      "gbWorkSeconds": 123157.89473684212,
+      "medianFirstVisitUsd": 0.1458004757296294,
+      "medianFirstVisitWorkSeconds": 410.4338203997989,
+      "heaviestFirstVisitUsd": 0.5960587353911251,
+      "heaviestFirstVisitWorkSeconds": 1677.9277483491524,
+      "unusedJsPerMillionVisitsUsd": 38126.63922648159
     },
     {
       "name": "Tanzania",
       "usdPerGb": 0.84,
       "gni": 1270,
       "gniYear": "2025",
-      "firstVisit": 0.002799369134008884,
-      "month": 0.02494123052805662,
-      "shareOfIncome": 0.0002356651703438421
+      "gbWorkSeconds": 4952.692913385827,
+      "medianFirstVisitUsd": 0.002799369134008884,
+      "medianFirstVisitWorkSeconds": 16.505256752329547,
+      "heaviestFirstVisitUsd": 0.011444327719509602,
+      "heaviestFirstVisitWorkSeconds": 67.47647713676213,
+      "unusedJsPerMillionVisitsUsd": 732.0314731484465
     },
     {
       "name": "Ethiopia",
       "usdPerGb": 0.68,
       "gni": 1110,
       "gniYear": "2025",
-      "firstVisit": 0.0022661559656262397,
-      "month": 0.020190519951283934,
-      "shareOfIncome": 0.0002182758913652317
+      "gbWorkSeconds": 4587.243243243243,
+      "medianFirstVisitUsd": 0.0022661559656262397,
+      "medianFirstVisitWorkSeconds": 15.287365649197552,
+      "heaviestFirstVisitUsd": 0.009264455772936345,
+      "heaviestFirstVisitWorkSeconds": 62.497517862835444,
+      "unusedJsPerMillionVisitsUsd": 592.5969068344567
     },
     {
       "name": "South Africa",
       "usdPerGb": 1.81,
       "gni": 6270,
       "gniYear": "2025",
-      "firstVisit": 0.006031973967328668,
-      "month": 0.053742413399741056,
-      "shareOfIncome": 0.00010285629358802116
+      "gbWorkSeconds": 2161.6076555023924,
+      "medianFirstVisitUsd": 0.006031973967328668,
+      "medianFirstVisitWorkSeconds": 7.203735417441319,
+      "heaviestFirstVisitUsd": 0.024659801395609974,
+      "heaviestFirstVisitWorkSeconds": 29.450174298297846,
+      "unusedJsPerMillionVisitsUsd": 1577.3535314270098
     },
     {
       "name": "Nigeria",
       "usdPerGb": 0.39,
       "gni": 1360,
       "gniYear": "2025",
-      "firstVisit": 0.0012997070979326964,
-      "month": 0.011579857030883432,
-      "shareOfIncome": 0.00010217520909603029
+      "gbWorkSeconds": 2147.294117647059,
+      "medianFirstVisitUsd": 0.0012997070979326964,
+      "medianFirstVisitWorkSeconds": 7.156034374500023,
+      "heaviestFirstVisitUsd": 0.005313437869772315,
+      "heaviestFirstVisitWorkSeconds": 29.255163800628743,
+      "unusedJsPerMillionVisitsUsd": 339.8717553903502
     },
     {
       "name": "Nepal",
       "usdPerGb": 0.43,
       "gni": 1570,
       "gniYear": "2025",
-      "firstVisit": 0.0014330103900283575,
-      "month": 0.012767534675076605,
-      "shareOfIncome": 0.00009758625229357913
+      "gbWorkSeconds": 2050.853503184713,
+      "medianFirstVisitUsd": 0.0014330103900283575,
+      "medianFirstVisitWorkSeconds": 6.834638089511045,
+      "heaviestFirstVisitUsd": 0.005858405856415629,
+      "heaviestFirstVisitWorkSeconds": 27.941237613274033,
+      "unusedJsPerMillionVisitsUsd": 374.73039696884763
     },
     {
       "name": "Kenya",
       "usdPerGb": 0.59,
       "gni": 2200,
       "gniYear": "2025",
-      "firstVisit": 0.001966223558411002,
-      "month": 0.017518245251849293,
-      "shareOfIncome": 0.00009555406501008705
+      "gbWorkSeconds": 2008.1454545454546,
+      "medianFirstVisitUsd": 0.001966223558411002,
+      "medianFirstVisitWorkSeconds": 6.692310002446174,
+      "heaviestFirstVisitUsd": 0.008038277802988887,
+      "heaviestFirstVisitWorkSeconds": 27.359374631263996,
+      "unusedJsPerMillionVisitsUsd": 514.1649632828374
     },
     {
       "name": "Egypt",
       "usdPerGb": 0.65,
       "gni": 3260,
       "gniYear": "2025",
-      "firstVisit": 0.002166178496554494,
-      "month": 0.019299761718139054,
-      "shareOfIncome": 0.00007104206767413148
+      "gbWorkSeconds": 1493.0061349693253,
+      "medianFirstVisitUsd": 0.002166178496554494,
+      "medianFirstVisitWorkSeconds": 4.975565822760752,
+      "heaviestFirstVisitUsd": 0.00885572978295386,
+      "heaviestFirstVisitWorkSeconds": 20.34101368550874,
+      "unusedJsPerMillionVisitsUsd": 566.4529256505837
     },
     {
       "name": "Ghana",
       "usdPerGb": 0.4,
       "gni": 2630,
       "gniYear": "2025",
-      "firstVisit": 0.0013330329209566118,
-      "month": 0.011876776441931726,
-      "shareOfIncome": 0.00005419061494417518
+      "gbWorkSeconds": 1138.8593155893536,
+      "medianFirstVisitUsd": 0.0013330329209566118,
+      "medianFirstVisitWorkSeconds": 3.7953424000468097,
+      "heaviestFirstVisitUsd": 0.005449679866433144,
+      "heaviestFirstVisitWorkSeconds": 15.516046707167824,
+      "unusedJsPerMillionVisitsUsd": 348.5864157849746
     },
     {
       "name": "Mexico",
       "usdPerGb": 2.03,
       "gni": 13730,
       "gniYear": "2025",
-      "firstVisit": 0.006765142073854803,
-      "month": 0.0602746404428035,
-      "shareOfIncome": 0.00005267994794709701
+      "gbWorkSeconds": 1107.1114348142753,
+      "medianFirstVisitUsd": 0.006765142073854803,
+      "medianFirstVisitWorkSeconds": 3.6895399744373467,
+      "heaviestFirstVisitUsd": 0.0276571253221482,
+      "heaviestFirstVisitWorkSeconds": 15.083507240513164,
+      "unusedJsPerMillionVisitsUsd": 1769.0760601087457
     },
     {
       "name": "Morocco",
       "usdPerGb": 0.63,
       "gni": 4360,
       "gniYear": "2025",
-      "firstVisit": 0.0020995268505066634,
-      "month": 0.018705922896042466,
-      "shareOfIncome": 0.00005148419145699761
+      "gbWorkSeconds": 1081.9816513761468,
+      "medianFirstVisitUsd": 0.0020995268505066634,
+      "medianFirstVisitWorkSeconds": 3.605792902888508,
+      "heaviestFirstVisitUsd": 0.008583245789632201,
+      "heaviestFirstVisitWorkSeconds": 14.741134053386679,
+      "unusedJsPerMillionVisitsUsd": 549.0236048613349
     },
     {
       "name": "South Korea",
       "usdPerGb": 5.01,
       "gni": 37880,
       "gniYear": "2025",
-      "firstVisit": 0.01669623733498156,
-      "month": 0.14875662493519484,
-      "shareOfIncome": 0.000047124590792564364
+      "gbWorkSeconds": 990.3611404435059,
+      "medianFirstVisitUsd": 0.01669623733498156,
+      "medianFirstVisitWorkSeconds": 3.300460009618319,
+      "heaviestFirstVisitUsd": 0.06825724032707513,
+      "heaviestFirstVisitWorkSeconds": 13.492877918931853,
+      "unusedJsPerMillionVisitsUsd": 4366.044857706806
     },
     {
       "name": "New Zealand",
       "usdPerGb": 5.89,
       "gni": 46630,
       "gniYear": "2025",
-      "firstVisit": 0.019628909761086104,
-      "month": 0.17488553310744465,
-      "shareOfIncome": 0.00004500592745634432
+      "gbWorkSeconds": 945.8357280720566,
+      "medianFirstVisitUsd": 0.019628909761086104,
+      "medianFirstVisitWorkSeconds": 3.1520754083425424,
+      "heaviestFirstVisitUsd": 0.08024653603322804,
+      "heaviestFirstVisitWorkSeconds": 12.886254810568552,
+      "unusedJsPerMillionVisitsUsd": 5132.93497243375
     },
     {
       "name": "Philippines",
       "usdPerGb": 0.59,
       "gni": 4850,
       "gniYear": "2025",
-      "firstVisit": 0.001966223558411002,
-      "month": 0.017518245251849293,
-      "shareOfIncome": 0.00004334411196333845
+      "gbWorkSeconds": 910.9113402061855,
+      "medianFirstVisitUsd": 0.001966223558411002,
+      "medianFirstVisitWorkSeconds": 3.035687011418883,
+      "heaviestFirstVisitUsd": 0.008038277802988887,
+      "heaviestFirstVisitWorkSeconds": 12.410437977068204,
+      "unusedJsPerMillionVisitsUsd": 514.1649632828374
     },
     {
       "name": "Canada",
       "usdPerGb": 5.37,
       "gni": 56420,
       "gniYear": "2025",
-      "firstVisit": 0.017895966963842512,
-      "month": 0.1594457237329334,
-      "shareOfIncome": 0.00003391259632745836
+      "gbWorkSeconds": 712.7004608294931,
+      "medianFirstVisitUsd": 0.017895966963842512,
+      "medianFirstVisitWorkSeconds": 2.375132942666656,
+      "heaviestFirstVisitUsd": 0.07316195220686496,
+      "heaviestFirstVisitWorkSeconds": 9.70997338045028,
+      "unusedJsPerMillionVisitsUsd": 4679.7726319132835
     },
     {
       "name": "Japan",
       "usdPerGb": 3.48,
       "gni": 38340,
       "gniYear": "2025",
-      "firstVisit": 0.011597386412322521,
-      "month": 0.103327955044806,
-      "shareOfIncome": 0.000032340518010893896
+      "gbWorkSeconds": 679.661971830986,
+      "medianFirstVisitUsd": 0.011597386412322521,
+      "medianFirstVisitWorkSeconds": 2.2650294589324735,
+      "heaviestFirstVisitUsd": 0.04741221483796835,
+      "heaviestFirstVisitWorkSeconds": 9.259850409668937,
+      "unusedJsPerMillionVisitsUsd": 3032.7018173292786
     },
     {
       "name": "United Arab Emirates",
       "usdPerGb": 4.61,
       "gni": 51550,
       "gniYear": "2024",
-      "firstVisit": 0.01536320441402495,
-      "month": 0.13687984849326312,
-      "shareOfIncome": 0.000031863398291351265
+      "gbWorkSeconds": 669.6349175557712,
+      "medianFirstVisitUsd": 0.01536320441402495,
+      "medianFirstVisitWorkSeconds": 2.2316134753097736,
+      "heaviestFirstVisitUsd": 0.06280756046064198,
+      "heaviestFirstVisitWorkSeconds": 9.12323982016076,
+      "unusedJsPerMillionVisitsUsd": 4017.4584419218318
     },
     {
       "name": "Bangladesh",
       "usdPerGb": 0.23,
       "gni": 2840,
       "gniYear": "2025",
-      "firstVisit": 0.0007664939295500518,
-      "month": 0.0068291464541107415,
-      "shareOfIncome": 0.00002885554839765102
+      "gbWorkSeconds": 606.4225352112677,
+      "medianFirstVisitUsd": 0.0007664939295500518,
+      "medianFirstVisitWorkSeconds": 2.0209530086164746,
+      "heaviestFirstVisitUsd": 0.0031335659231990576,
+      "heaviestFirstVisitWorkSeconds": 8.262021701730474,
+      "unusedJsPerMillionVisitsUsd": 200.43718907636037
     },
     {
       "name": "Pakistan",
       "usdPerGb": 0.12,
       "gni": 1500,
       "gniYear": "2025",
-      "firstVisit": 0.00039990987628698346,
-      "month": 0.0035630329325795173,
-      "shareOfIncome": 0.00002850426346063614
+      "gbWorkSeconds": 599.04,
+      "medianFirstVisitUsd": 0.00039990987628698346,
+      "medianFirstVisitWorkSeconds": 1.9963501024246215,
+      "heaviestFirstVisitUsd": 0.001634903959929943,
+      "heaviestFirstVisitWorkSeconds": 8.161440567970276,
+      "unusedJsPerMillionVisitsUsd": 104.57592473549236
     },
     {
       "name": "Argentina",
       "usdPerGb": 1.11,
       "gni": 14650,
       "gniYear": "2025",
-      "firstVisit": 0.0036991663556545976,
-      "month": 0.03295805462636054,
-      "shareOfIncome": 0.000026996358738315804
+      "gbWorkSeconds": 567.3501706484642,
+      "medianFirstVisitUsd": 0.0036991663556545976,
+      "medianFirstVisitWorkSeconds": 1.8907411379618857,
+      "heaviestFirstVisitUsd": 0.015122861629351975,
+      "heaviestFirstVisitWorkSeconds": 7.729692005500859,
+      "unusedJsPerMillionVisitsUsd": 967.3273038033044
     },
     {
       "name": "United States",
       "usdPerGb": 6,
       "gni": 88810,
       "gniYear": "2025",
-      "firstVisit": 0.019995493814349174,
-      "month": 0.17815164662897587,
-      "shareOfIncome": 0.00002407183604940559
+      "gbWorkSeconds": 505.8889764666141,
+      "medianFirstVisitUsd": 0.019995493814349174,
+      "medianFirstVisitWorkSeconds": 1.685916649947603,
+      "heaviestFirstVisitUsd": 0.08174519799649715,
+      "heaviestFirstVisitWorkSeconds": 6.892332424251443,
+      "unusedJsPerMillionVisitsUsd": 5228.796236774619
     },
     {
       "name": "Switzerland",
       "usdPerGb": 7.29,
       "gni": 110330,
       "gniYear": "2025",
-      "firstVisit": 0.024294524984434247,
-      "month": 0.21645425065420568,
-      "shareOfIncome": 0.000023542563290587042
+      "gbWorkSeconds": 494.7658841656847,
+      "medianFirstVisitUsd": 0.024294524984434247,
+      "medianFirstVisitWorkSeconds": 1.6488480293976582,
+      "heaviestFirstVisitUsd": 0.09932041556574404,
+      "heaviestFirstVisitWorkSeconds": 6.740789193839313,
+      "unusedJsPerMillionVisitsUsd": 6352.987427681161
     },
     {
       "name": "Portugal",
       "usdPerGb": 1.79,
       "gni": 29930,
       "gniYear": "2025",
-      "firstVisit": 0.005965322321280837,
-      "month": 0.05314857457764447,
-      "shareOfIncome": 0.000021309151183820036
+      "gbWorkSeconds": 447.82893417975276,
+      "medianFirstVisitUsd": 0.005965322321280837,
+      "medianFirstVisitWorkSeconds": 1.4924267805463052,
+      "heaviestFirstVisitUsd": 0.02438731740228832,
+      "heaviestFirstVisitWorkSeconds": 6.101310815514031,
+      "unusedJsPerMillionVisitsUsd": 1559.924210637761
     },
     {
       "name": "Vietnam",
       "usdPerGb": 0.29,
       "gni": 4970,
       "gniYear": "2025",
-      "firstVisit": 0.0009664488676935434,
-      "month": 0.0086106629204005,
-      "shareOfIncome": 0.00002079033300700322
+      "gbWorkSeconds": 436.92555331991946,
+      "medianFirstVisitUsd": 0.0009664488676935434,
+      "medianFirstVisitWorkSeconds": 1.45609036645659,
+      "heaviestFirstVisitUsd": 0.003951017903164029,
+      "heaviestFirstVisitWorkSeconds": 5.952760977644315,
+      "unusedJsPerMillionVisitsUsd": 252.72515144410653
     },
     {
       "name": "India",
       "usdPerGb": 0.16,
       "gni": 2760,
       "gniYear": "2025",
-      "firstVisit": 0.0005332131683826447,
-      "month": 0.0047507105767726895,
-      "shareOfIncome": 0.00002065526337727256
+      "gbWorkSeconds": 434.0869565217392,
+      "medianFirstVisitUsd": 0.0005332131683826447,
+      "medianFirstVisitWorkSeconds": 1.446630509003349,
+      "heaviestFirstVisitUsd": 0.0021798719465732576,
+      "heaviestFirstVisitWorkSeconds": 5.914087368094404,
+      "unusedJsPerMillionVisitsUsd": 139.43456631398982
     },
     {
       "name": "Indonesia",
       "usdPerGb": 0.28,
       "gni": 5120,
       "gniYear": "2025",
-      "firstVisit": 0.0009331230446696282,
-      "month": 0.008313743509352208,
-      "shareOfIncome": 0.000019485336350044236
+      "gbWorkSeconds": 409.50000000000006,
+      "medianFirstVisitUsd": 0.0009331230446696282,
+      "medianFirstVisitWorkSeconds": 1.3646924528293314,
+      "heaviestFirstVisitUsd": 0.003814775906503201,
+      "heaviestFirstVisitWorkSeconds": 5.579109763260932,
+      "unusedJsPerMillionVisitsUsd": 244.0104910494822
     },
     {
       "name": "Sri Lanka",
       "usdPerGb": 0.25,
       "gni": 4670,
       "gniYear": "2025",
-      "firstVisit": 0.0008331455755978823,
-      "month": 0.007422985276207328,
-      "shareOfIncome": 0.00001907405210160341
+      "gbWorkSeconds": 400.8565310492505,
+      "medianFirstVisitUsd": 0.0008331455755978823,
+      "medianFirstVisitWorkSeconds": 1.335887381172793,
+      "heaviestFirstVisitUsd": 0.0034060499165207148,
+      "heaviestFirstVisitWorkSeconds": 5.461349416468332,
+      "unusedJsPerMillionVisitsUsd": 217.8665098656091
     },
     {
       "name": "Peru",
       "usdPerGb": 0.45,
       "gni": 8430,
       "gniYear": "2025",
-      "firstVisit": 0.0014996620360761882,
-      "month": 0.01336137349717319,
-      "shareOfIncome": 0.00001901974875042447
+      "gbWorkSeconds": 399.7153024911033,
+      "medianFirstVisitUsd": 0.0014996620360761882,
+      "medianFirstVisitWorkSeconds": 1.3320841430769275,
+      "heaviestFirstVisitUsd": 0.006130889849737287,
+      "heaviestFirstVisitWorkSeconds": 5.445801090727499,
+      "unusedJsPerMillionVisitsUsd": 392.15971775809635
     },
     {
       "name": "Thailand",
       "usdPerGb": 0.41,
       "gni": 7690,
       "gniYear": "2025",
-      "firstVisit": 0.001366358743980527,
-      "month": 0.012173695852980016,
-      "shareOfIncome": 0.000018996664530007826
+      "gbWorkSeconds": 399.23016905071523,
+      "medianFirstVisitUsd": 0.001366358743980527,
+      "medianFirstVisitWorkSeconds": 1.330467395959192,
+      "heaviestFirstVisitUsd": 0.005585921863093972,
+      "heaviestFirstVisitWorkSeconds": 5.4391915358709575,
+      "unusedJsPerMillionVisitsUsd": 357.3010761795989
     },
     {
       "name": "Ukraine",
       "usdPerGb": 0.27,
       "gni": 5510,
       "gniYear": "2025",
-      "firstVisit": 0.0008997972216457129,
-      "month": 0.008016824098303914,
-      "shareOfIncome": 0.00001745950801808475
+      "gbWorkSeconds": 366.92558983666066,
+      "medianFirstVisitUsd": 0.0008997972216457129,
+      "medianFirstVisitWorkSeconds": 1.2228097269842284,
+      "heaviestFirstVisitUsd": 0.0036785339098423723,
+      "heaviestFirstVisitWorkSeconds": 4.999067498529888,
+      "unusedJsPerMillionVisitsUsd": 235.29583065485784
     },
     {
       "name": "Norway",
       "usdPerGb": 4.07,
       "gni": 97310,
       "gniYear": "2025",
-      "firstVisit": 0.013563609970733524,
-      "month": 0.12084620029665531,
-      "shareOfIncome": 0.000014902419109648173
+      "gbWorkSeconds": 313.1863117870722,
+      "medianFirstVisitUsd": 0.013563609970733524,
+      "medianFirstVisitWorkSeconds": 1.0437191600128723,
+      "heaviestFirstVisitUsd": 0.05545049264095724,
+      "heaviestFirstVisitWorkSeconds": 4.266912844471152,
+      "unusedJsPerMillionVisitsUsd": 3546.866780612116
     },
     {
       "name": "Saudi Arabia",
       "usdPerGb": 1.49,
       "gni": 36070,
       "gniYear": "2025",
-      "firstVisit": 0.004965547630563378,
-      "month": 0.044240992246195675,
-      "shareOfIncome": 0.000014718378346391685
+      "gbWorkSeconds": 309.3185472691988,
+      "medianFirstVisitUsd": 0.004965547630563378,
+      "medianFirstVisitWorkSeconds": 1.0308295164307895,
+      "heaviestFirstVisitUsd": 0.02030005750246346,
+      "heaviestFirstVisitWorkSeconds": 4.214217648418253,
+      "unusedJsPerMillionVisitsUsd": 1298.4843987990303
     },
     {
       "name": "Brazil",
       "usdPerGb": 0.4,
       "gni": 10550,
       "gniYear": "2025",
-      "firstVisit": 0.0013330329209566118,
-      "month": 0.011876776441931726,
-      "shareOfIncome": 0.000013509129602197224
+      "gbWorkSeconds": 283.90521327014216,
+      "medianFirstVisitUsd": 0.0013330329209566118,
+      "medianFirstVisitWorkSeconds": 0.9461374893007685,
+      "heaviestFirstVisitUsd": 0.005449679866433144,
+      "heaviestFirstVisitWorkSeconds": 3.8679813118342534,
+      "unusedJsPerMillionVisitsUsd": 348.5864157849746
     },
     {
       "name": "Chile",
       "usdPerGb": 0.64,
       "gni": 16960,
       "gniYear": "2025",
-      "firstVisit": 0.0021328526735305787,
-      "month": 0.019002842307090758,
-      "shareOfIncome": 0.000013445407292752895
+      "gbWorkSeconds": 282.5660377358491,
+      "medianFirstVisitUsd": 0.0021328526735305787,
+      "medianFirstVisitWorkSeconds": 0.9416745766153877,
+      "heaviestFirstVisitUsd": 0.00871948778629303,
+      "heaviestFirstVisitWorkSeconds": 3.849736116967112,
+      "unusedJsPerMillionVisitsUsd": 557.7382652559593
     },
     {
       "name": "Sweden",
       "usdPerGb": 2.33,
       "gni": 63010,
       "gniYear": "2025",
-      "firstVisit": 0.007764916764572263,
-      "month": 0.0691822227742523,
-      "shareOfIncome": 0.0000131754748974929
+      "gbWorkSeconds": 276.8931915568957,
+      "medianFirstVisitUsd": 0.007764916764572263,
+      "medianFirstVisitWorkSeconds": 0.9227693498352183,
+      "heaviestFirstVisitUsd": 0.031744385221973065,
+      "heaviestFirstVisitWorkSeconds": 3.7724481279500766,
+      "unusedJsPerMillionVisitsUsd": 2030.5158719474769
     },
     {
       "name": "Germany",
       "usdPerGb": 2.14,
       "gni": 60200,
       "gniYear": "2025",
-      "firstVisit": 0.007131726127117872,
-      "month": 0.06354075396433473,
-      "shareOfIncome": 0.000012665931022790975
+      "gbWorkSeconds": 266.1847176079734,
+      "medianFirstVisitUsd": 0.007131726127117872,
+      "medianFirstVisitWorkSeconds": 0.887082479067419,
+      "heaviestFirstVisitUsd": 0.02915578728541732,
+      "heaviestFirstVisitWorkSeconds": 3.6265537407509116,
+      "unusedJsPerMillionVisitsUsd": 1864.937324449614
     },
     {
       "name": "Turkey",
       "usdPerGb": 0.44,
       "gni": 16300,
       "gniYear": "2025",
-      "firstVisit": 0.0014663362130522728,
-      "month": 0.013064454086124897,
-      "shareOfIncome": 0.000009618003008190109
+      "gbWorkSeconds": 202.13006134969325,
+      "medianFirstVisitUsd": 0.0014663362130522728,
+      "medianFirstVisitWorkSeconds": 0.6736150652353018,
+      "heaviestFirstVisitUsd": 0.005994647853076458,
+      "heaviestFirstVisitWorkSeconds": 2.7538603143457987,
+      "unusedJsPerMillionVisitsUsd": 383.445057363472
     },
     {
       "name": "China",
       "usdPerGb": 0.38,
       "gni": 14230,
       "gniYear": "2025",
-      "firstVisit": 0.001266381274908781,
-      "month": 0.011282937619835138,
-      "shareOfIncome": 0.000009514775224035253
+      "gbWorkSeconds": 199.96064652143357,
+      "medianFirstVisitUsd": 0.001266381274908781,
+      "medianFirstVisitWorkSeconds": 0.6663853117720978,
+      "heaviestFirstVisitUsd": 0.005177195873111487,
+      "heaviestFirstVisitWorkSeconds": 2.724303773567028,
+      "unusedJsPerMillionVisitsUsd": 331.1570949957258
     },
     {
       "name": "Colombia",
       "usdPerGb": 0.2,
       "gni": 7900,
       "gniYear": "2025",
-      "firstVisit": 0.0006665164604783059,
-      "month": 0.005938388220965863,
-      "shareOfIncome": 0.000009020336538175994
+      "gbWorkSeconds": 189.56962025316457,
+      "medianFirstVisitUsd": 0.0006665164604783059,
+      "medianFirstVisitWorkSeconds": 0.631756361526779,
+      "heaviestFirstVisitUsd": 0.002724839933216572,
+      "heaviestFirstVisitWorkSeconds": 2.5827343569526193,
+      "unusedJsPerMillionVisitsUsd": 174.2932078924873
+    },
+    {
+      "name": "Netherlands",
+      "usdPerGb": 1.61,
+      "gni": 68530,
+      "gniYear": "2025",
+      "gbWorkSeconds": 175.9182839632278,
+      "medianFirstVisitUsd": 0.005365457506850362,
+      "medianFirstVisitWorkSeconds": 0.5862621598029405,
+      "heaviestFirstVisitUsd": 0.021934961462393404,
+      "heaviestFirstVisitWorkSeconds": 2.3967458256296776,
+      "unusedJsPerMillionVisitsUsd": 1403.0603235345227
     },
     {
       "name": "Malaysia",
       "usdPerGb": 0.28,
       "gni": 12380,
       "gniYear": "2025",
-      "firstVisit": 0.0009331230446696282,
-      "month": 0.008313743509352208,
-      "shareOfIncome": 0.000008058555905672575
+      "gbWorkSeconds": 169.35702746365106,
+      "medianFirstVisitUsd": 0.0009331230446696282,
+      "medianFirstVisitWorkSeconds": 0.5643962325109997,
+      "heaviestFirstVisitUsd": 0.003814775906503201,
+      "heaviestFirstVisitWorkSeconds": 2.3073539570190604,
+      "unusedJsPerMillionVisitsUsd": 244.0104910494822
     },
     {
       "name": "Ireland",
       "usdPerGb": 1.5,
       "gni": 87360,
       "gniYear": "2025",
-      "firstVisit": 0.004998873453587294,
-      "month": 0.04453791165724397,
-      "shareOfIncome": 0.000006117845007863182
+      "gbWorkSeconds": 128.57142857142856,
+      "medianFirstVisitUsd": 0.004998873453587294,
+      "medianFirstVisitWorkSeconds": 0.4284748674503394,
+      "heaviestFirstVisitUsd": 0.02043629949912429,
+      "heaviestFirstVisitWorkSeconds": 1.7516828142106533,
+      "unusedJsPerMillionVisitsUsd": 1307.1990591936546
     },
     {
       "name": "Poland",
       "usdPerGb": 0.37,
       "gni": 25520,
       "gniYear": "2025",
-      "firstVisit": 0.0012330554518848657,
-      "month": 0.010986018208786846,
-      "shareOfIncome": 0.000005165839283128611
+      "gbWorkSeconds": 108.564263322884,
+      "medianFirstVisitUsd": 0.0012330554518848657,
+      "medianFirstVisitWorkSeconds": 0.361799342622017,
+      "heaviestFirstVisitUsd": 0.005040953876450658,
+      "heaviestFirstVisitWorkSeconds": 1.4791012001121677,
+      "unusedJsPerMillionVisitsUsd": 322.44243460110147
     },
     {
       "name": "Spain",
       "usdPerGb": 0.48,
       "gni": 37120,
       "gniYear": "2025",
-      "firstVisit": 0.0015996395051479338,
-      "month": 0.01425213173031807,
-      "shareOfIncome": 0.000004607370171439031
+      "gbWorkSeconds": 96.82758620689654,
+      "medianFirstVisitUsd": 0.0015996395051479338,
+      "medianFirstVisitWorkSeconds": 0.32268590017639354,
+      "heaviestFirstVisitUsd": 0.006539615839719772,
+      "heaviestFirstVisitWorkSeconds": 1.3191983676676091,
+      "unusedJsPerMillionVisitsUsd": 418.30369894196946
     },
     {
       "name": "United Kingdom",
       "usdPerGb": 0.62,
       "gni": 54550,
       "gniYear": "2025",
-      "firstVisit": 0.002066201027482748,
-      "month": 0.018409003484994173,
-      "shareOfIncome": 0.000004049643296424017
+      "gbWorkSeconds": 85.1065077910174,
+      "medianFirstVisitUsd": 0.002066201027482748,
+      "medianFirstVisitWorkSeconds": 0.2836244416826914,
+      "heaviestFirstVisitUsd": 0.008447003792971372,
+      "heaviestFirstVisitWorkSeconds": 1.1595080550278576,
+      "unusedJsPerMillionVisitsUsd": 540.3089444667105
     },
     {
       "name": "Singapore",
       "usdPerGb": 0.63,
       "gni": 81760,
       "gniYear": "2025",
-      "firstVisit": 0.0020995268505066634,
-      "month": 0.018705922896042466,
-      "shareOfIncome": 0.000002745487704898601
+      "gbWorkSeconds": 57.6986301369863,
+      "medianFirstVisitUsd": 0.0020995268505066634,
+      "medianFirstVisitWorkSeconds": 0.19228543366675507,
+      "heaviestFirstVisitUsd": 0.008583245789632201,
+      "heaviestFirstVisitWorkSeconds": 0.7860976574457672,
+      "unusedJsPerMillionVisitsUsd": 549.0236048613349
     },
     {
       "name": "Australia",
       "usdPerGb": 0.44,
       "gni": 64120,
       "gniYear": "2025",
-      "firstVisit": 0.0014663362130522728,
-      "month": 0.013064454086124897,
-      "shareOfIncome": 0.0000024450007647145783
+      "gbWorkSeconds": 51.38365564566438,
+      "medianFirstVisitUsd": 0.0014663362130522728,
+      "medianFirstVisitWorkSeconds": 0.1712402614369217,
+      "heaviestFirstVisitUsd": 0.005994647853076458,
+      "heaviestFirstVisitWorkSeconds": 0.7000611840897772,
+      "unusedJsPerMillionVisitsUsd": 383.445057363472
     },
     {
       "name": "France",
       "usdPerGb": 0.2,
       "gni": 48630,
       "gniYear": "2025",
-      "firstVisit": 0.0006665164604783059,
-      "month": 0.005938388220965863,
-      "shareOfIncome": 0.0000014653641507627053
+      "gbWorkSeconds": 30.795805058605797,
+      "medianFirstVisitUsd": 0.0006665164604783059,
+      "medianFirstVisitWorkSeconds": 0.10262955492620922,
+      "heaviestFirstVisitUsd": 0.002724839933216572,
+      "heaviestFirstVisitWorkSeconds": 0.41956819699620995,
+      "unusedJsPerMillionVisitsUsd": 174.2932078924873
     },
     {
       "name": "Italy",
       "usdPerGb": 0.09,
       "gni": 42080,
       "gniYear": "2025",
-      "firstVisit": 0.0002999324072152376,
-      "month": 0.002672274699434638,
-      "shareOfIncome": 7.620555226524633e-7
+      "gbWorkSeconds": 16.015209125475284,
+      "medianFirstVisitUsd": 0.0002999324072152376,
+      "medianFirstVisitWorkSeconds": 0.053372002500658246,
+      "heaviestFirstVisitUsd": 0.0012261779699474574,
+      "heaviestFirstVisitWorkSeconds": 0.21819440681954755,
+      "unusedJsPerMillionVisitsUsd": 78.43194355161927
     },
     {
       "name": "Israel",
       "usdPerGb": 0.02,
       "gni": 56180,
       "gniYear": "2025",
-      "firstVisit": 0.00006665164604783058,
-      "month": 0.0005938388220965862,
-      "shareOfIncome": 1.268434650259707e-7
+      "gbWorkSeconds": 2.6657173371306517,
+      "medianFirstVisitUsd": 0.00006665164604783058,
+      "medianFirstVisitWorkSeconds": 0.008883722420899883,
+      "heaviestFirstVisitUsd": 0.0002724839933216572,
+      "heaviestFirstVisitWorkSeconds": 0.03631826525440671,
+      "unusedJsPerMillionVisitsUsd": 17.429320789248727
     }
   ],
-  "missingPrices": [
-    "Netherlands"
-  ],
+  "missingPrices": [],
   "missingIncome": []
 }

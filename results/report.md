@@ -3,12 +3,12 @@
 Measured 2026-10-08 from a GitHub Actions runner (ubuntu-latest), Moto G4 emulation (Playwright), en-US, Chromium 141.0.7390.37.
 Prices: Cable.co.uk Worldwide Mobile Data Pricing, 2023 edition. Income: World Bank GNI per capita (Atlas method), most recent year.
 
-35 of 50 sites were usable. Median first visit: **3.58 MB**. Median repeat visit: **0.19 MB**.
-JavaScript was 45.3% of all bytes on first visits, and an estimated 25.7% of all bytes were JavaScript that never ran during load.
+35 of 50 sites were usable. Median first visit: **3.58 MB**. Median repeat visit: **0.19 MB**, 19× less.
+JavaScript was 45.3% of all bytes on first visits. An estimated 25.7% of all bytes were JavaScript that didn't run during load: 57% of the JavaScript.
 
 ## Sites (first visit, heaviest first)
 
-| Site | First visit | Repeat visit | JavaScript | JS unused during load | Requests |
+| Site | First visit | Repeat visit | JavaScript | JS that didn't run during load | Requests |
 |---|---:|---:|---:|---:|---:|
 | CNN | 14.63 MB | 0.63 MB | 1.32 MB | 71% | 66 |
 | Microsoft | 10.80 MB | 0.03 MB | 3.14 MB | 41% | 285 |
@@ -48,59 +48,63 @@ JavaScript was 45.3% of all bytes on first visits, and an estimated 25.7% of all
 
 Excluded: X (blocked (403, "")); Reddit (blocked (403, "")); LinkedIn (blocked (403, "Attention Required! | Cloudflare")); eBay (blocked (403, "Error Page | eBay")); AliExpress (page.goto: Timeout 45000ms exceeded.); Etsy (blocked (403, "etsy.com")); Tripadvisor (blocked (403, "tripadvisor.com")); The New York Times (blocked (403, "nytimes.com")); Reuters (blocked (401, "reuters.com")); The Weather Channel (blocked (429, "Vercel Security Checkpoint")); Stack Overflow (blocked (403, "Just a moment...")); Medium (blocked (403, "Just a moment...")); Quora (blocked (403, "Just a moment...")); Canva (blocked (403, "Just a moment...")); Zara (blocked (403, "Access Denied")).
 
-## Countries: a month of using the median site (31.88 MB)
+## Countries: what a first visit costs
 
-| Country | 1 GB costs | First visit | A month of use | Share of monthly income |
-|---|---:|---:|---:|---:|
-| Zimbabwe | $43.75 | $0.15 | $1.30 | 0.586% |
-| Tanzania | $0.84 | 0.28¢ | $0.02 | 0.024% |
-| Ethiopia | $0.68 | 0.23¢ | $0.02 | 0.022% |
-| South Africa | $1.81 | 0.60¢ | $0.05 | 0.010% |
-| Nigeria | $0.39 | 0.13¢ | $0.01 | 0.010% |
-| Nepal | $0.43 | 0.14¢ | $0.01 | 0.010% |
-| Kenya | $0.59 | 0.20¢ | $0.02 | 0.010% |
-| Egypt | $0.65 | 0.22¢ | $0.02 | 0.007% |
-| Ghana | $0.40 | 0.13¢ | $0.01 | 0.005% |
-| Mexico | $2.03 | 0.68¢ | $0.06 | 0.005% |
-| Morocco | $0.63 | 0.21¢ | $0.02 | 0.005% |
-| South Korea | $5.01 | $0.02 | $0.15 | 0.005% |
-| New Zealand | $5.89 | $0.02 | $0.17 | 0.005% |
-| Philippines | $0.59 | 0.20¢ | $0.02 | 0.004% |
-| Canada | $5.37 | $0.02 | $0.16 | 0.003% |
-| Japan | $3.48 | $0.01 | $0.10 | 0.003% |
-| United Arab Emirates | $4.61 | $0.02 | $0.14 | 0.003% |
-| Bangladesh | $0.23 | 0.08¢ | 0.68¢ | 0.003% |
-| Pakistan | $0.12 | 0.04¢ | 0.36¢ | 0.003% |
-| Argentina | $1.11 | 0.37¢ | $0.03 | 0.003% |
-| United States | $6.00 | $0.02 | $0.18 | 0.002% |
-| Switzerland | $7.29 | $0.02 | $0.22 | 0.002% |
-| Portugal | $1.79 | 0.60¢ | $0.05 | 0.002% |
-| Vietnam | $0.29 | 0.10¢ | 0.86¢ | 0.002% |
-| India | $0.16 | 0.05¢ | 0.48¢ | 0.002% |
-| Indonesia | $0.28 | 0.09¢ | 0.83¢ | 0.002% |
-| Sri Lanka | $0.25 | 0.08¢ | 0.74¢ | 0.002% |
-| Peru | $0.45 | 0.15¢ | $0.01 | 0.002% |
-| Thailand | $0.41 | 0.14¢ | $0.01 | 0.002% |
-| Ukraine | $0.27 | 0.09¢ | 0.80¢ | 0.002% |
-| Norway | $4.07 | $0.01 | $0.12 | 0.001% |
-| Saudi Arabia | $1.49 | 0.50¢ | $0.04 | 0.001% |
-| Brazil | $0.40 | 0.13¢ | $0.01 | 0.001% |
-| Chile | $0.64 | 0.21¢ | $0.02 | 0.001% |
-| Sweden | $2.33 | 0.78¢ | $0.07 | 0.001% |
-| Germany | $2.14 | 0.71¢ | $0.06 | 0.001% |
-| Turkey | $0.44 | 0.15¢ | $0.01 | 0.001% |
-| China | $0.38 | 0.13¢ | $0.01 | 0.001% |
-| Colombia | $0.20 | 0.07¢ | 0.59¢ | 0.001% |
-| Malaysia | $0.28 | 0.09¢ | 0.83¢ | 0.001% |
-| Ireland | $1.50 | 0.50¢ | $0.04 | 0.001% |
-| Poland | $0.37 | 0.12¢ | $0.01 | 0.001% |
-| Spain | $0.48 | 0.16¢ | $0.01 | 0.000% |
-| United Kingdom | $0.62 | 0.21¢ | $0.02 | 0.000% |
-| Singapore | $0.63 | 0.21¢ | $0.02 | 0.000% |
-| Australia | $0.44 | 0.15¢ | $0.01 | 0.000% |
-| France | $0.20 | 0.07¢ | 0.59¢ | 0.000% |
-| Italy | $0.09 | 0.03¢ | 0.27¢ | 0.000% |
-| Israel | $0.02 | 0.01¢ | 0.06¢ | 0.000% |
+Work time is the cost divided by average hourly income: GNI per capita spread over 2,080 working hours a year.
+The median site's first visit is 3.58 MB; the heaviest, CNN, is 14.63 MB. The median site ships 0.94 MB of JavaScript that doesn't run during load.
 
-No price data for: Netherlands.
+| Country | 1 GB | 1 GB in work time | Median site, first visit | CNN, first visit | Unused JS, per million first visits |
+|---|---:|---:|---:|---:|---:|
+| Zimbabwe | $43.75 | 34 h | $0.15 · 6.8 min | $0.60 · 28 min | $38,127 |
+| Tanzania | $0.84 | 1.4 h | 0.28¢ · 17 s | $0.01 · 1.1 min | $732 |
+| Ethiopia | $0.68 | 1.3 h | 0.23¢ · 15 s | 0.93¢ · 1.0 min | $593 |
+| South Africa | $1.81 | 36 min | 0.60¢ · 7.2 s | $0.02 · 29 s | $1,577 |
+| Nigeria | $0.39 | 36 min | 0.13¢ · 7.2 s | 0.53¢ · 29 s | $340 |
+| Nepal | $0.43 | 34 min | 0.14¢ · 6.8 s | 0.59¢ · 28 s | $375 |
+| Kenya | $0.59 | 33 min | 0.20¢ · 6.7 s | 0.80¢ · 27 s | $514 |
+| Egypt | $0.65 | 25 min | 0.22¢ · 5.0 s | 0.89¢ · 20 s | $566 |
+| Ghana | $0.40 | 19 min | 0.13¢ · 3.8 s | 0.54¢ · 16 s | $349 |
+| Mexico | $2.03 | 18 min | 0.68¢ · 3.7 s | $0.03 · 15 s | $1,769 |
+| Morocco | $0.63 | 18 min | 0.21¢ · 3.6 s | 0.86¢ · 15 s | $549 |
+| South Korea | $5.01 | 17 min | $0.02 · 3.3 s | $0.07 · 13 s | $4,366 |
+| New Zealand | $5.89 | 16 min | $0.02 · 3.2 s | $0.08 · 13 s | $5,133 |
+| Philippines | $0.59 | 15 min | 0.20¢ · 3.0 s | 0.80¢ · 12 s | $514 |
+| Canada | $5.37 | 12 min | $0.02 · 2.4 s | $0.07 · 9.7 s | $4,680 |
+| Japan | $3.48 | 11 min | $0.01 · 2.3 s | $0.05 · 9.3 s | $3,033 |
+| United Arab Emirates | $4.61 | 11 min | $0.02 · 2.2 s | $0.06 · 9.1 s | $4,017 |
+| Bangladesh | $0.23 | 10 min | 0.08¢ · 2.0 s | 0.31¢ · 8.3 s | $200 |
+| Pakistan | $0.12 | 10.0 min | 0.04¢ · 2.0 s | 0.16¢ · 8.2 s | $105 |
+| Argentina | $1.11 | 9.5 min | 0.37¢ · 1.9 s | $0.02 · 7.7 s | $967 |
+| United States | $6.00 | 8.4 min | $0.02 · 1.7 s | $0.08 · 6.9 s | $5,229 |
+| Switzerland | $7.29 | 8.2 min | $0.02 · 1.6 s | $0.10 · 6.7 s | $6,353 |
+| Portugal | $1.79 | 7.5 min | 0.60¢ · 1.5 s | $0.02 · 6.1 s | $1,560 |
+| Vietnam | $0.29 | 7.3 min | 0.10¢ · 1.5 s | 0.40¢ · 6.0 s | $253 |
+| India | $0.16 | 7.2 min | 0.05¢ · 1.4 s | 0.22¢ · 5.9 s | $139 |
+| Indonesia | $0.28 | 6.8 min | 0.09¢ · 1.4 s | 0.38¢ · 5.6 s | $244 |
+| Sri Lanka | $0.25 | 6.7 min | 0.08¢ · 1.3 s | 0.34¢ · 5.5 s | $218 |
+| Peru | $0.45 | 6.7 min | 0.15¢ · 1.3 s | 0.61¢ · 5.4 s | $392 |
+| Thailand | $0.41 | 6.7 min | 0.14¢ · 1.3 s | 0.56¢ · 5.4 s | $357 |
+| Ukraine | $0.27 | 6.1 min | 0.09¢ · 1.2 s | 0.37¢ · 5.0 s | $235 |
+| Norway | $4.07 | 5.2 min | $0.01 · 1.0 s | $0.06 · 4.3 s | $3,547 |
+| Saudi Arabia | $1.49 | 5.2 min | 0.50¢ · 1.0 s | $0.02 · 4.2 s | $1,298 |
+| Brazil | $0.40 | 4.7 min | 0.13¢ · 0.9 s | 0.54¢ · 3.9 s | $349 |
+| Chile | $0.64 | 4.7 min | 0.21¢ · 0.9 s | 0.87¢ · 3.8 s | $558 |
+| Sweden | $2.33 | 4.6 min | 0.78¢ · 0.9 s | $0.03 · 3.8 s | $2,031 |
+| Germany | $2.14 | 4.4 min | 0.71¢ · 0.9 s | $0.03 · 3.6 s | $1,865 |
+| Turkey | $0.44 | 3.4 min | 0.15¢ · 0.7 s | 0.60¢ · 2.8 s | $383 |
+| China | $0.38 | 3.3 min | 0.13¢ · 0.7 s | 0.52¢ · 2.7 s | $331 |
+| Colombia | $0.20 | 3.2 min | 0.07¢ · 0.6 s | 0.27¢ · 2.6 s | $174 |
+| Netherlands | $1.61 | 2.9 min | 0.54¢ · 0.6 s | $0.02 · 2.4 s | $1,403 |
+| Malaysia | $0.28 | 2.8 min | 0.09¢ · 0.6 s | 0.38¢ · 2.3 s | $244 |
+| Ireland | $1.50 | 2.1 min | 0.50¢ · 0.4 s | $0.02 · 1.8 s | $1,307 |
+| Poland | $0.37 | 1.8 min | 0.12¢ · 0.4 s | 0.50¢ · 1.5 s | $322 |
+| Spain | $0.48 | 1.6 min | 0.16¢ · 0.3 s | 0.65¢ · 1.3 s | $418 |
+| United Kingdom | $0.62 | 1.4 min | 0.21¢ · 0.3 s | 0.84¢ · 1.2 s | $540 |
+| Singapore | $0.63 | 58 s | 0.21¢ · 0.2 s | 0.86¢ · 0.8 s | $549 |
+| Australia | $0.44 | 51 s | 0.15¢ · 0.2 s | 0.60¢ · 0.7 s | $383 |
+| France | $0.20 | 31 s | 0.07¢ · 0.1 s | 0.27¢ · 0.4 s | $174 |
+| Italy | $0.09 | 16 s | 0.03¢ · 0.1 s | 0.12¢ · 0.2 s | $78.43 |
+| Israel | $0.02 | 2.7 s | 0.01¢ · 0.0 s | 0.03¢ · 0.0 s | $17.43 |
+
+
 
