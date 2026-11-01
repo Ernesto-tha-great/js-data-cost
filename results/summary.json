@@ -1,5 +1,5 @@
 {
-  "measuredAt": "2026-10-08T02:11:06.830Z",
+  "measuredAt": "2026-11-01T13:45:17.746Z",
   "priceEdition": "2023",
   "workHoursPerYear": 2080,
   "sitesMeasured": 50,
@@ -43,7 +43,11 @@
     },
     {
       "name": "The Weather Channel",
-      "reason": "blocked (429, \"Vercel Security Checkpoint\")"
+      "reason": "page.goto: Timeout 45000ms exceeded."
+    },
+    {
+      "name": "ChatGPT",
+      "reason": "blocked (403, \"Just a moment...\")"
     },
     {
       "name": "Stack Overflow",
@@ -58,125 +62,123 @@
       "reason": "blocked (403, \"Just a moment...\")"
     },
     {
-      "name": "Canva",
-      "reason": "blocked (403, \"Just a moment...\")"
-    },
-    {
       "name": "Zara",
       "reason": "blocked (403, \"Access Denied\")"
     }
   ],
-  "medianColdBytes": 3578333,
-  "medianWarmBytes": 189954,
-  "medianUnusedJsBytes": 935729.5347664524,
+  "medianColdBytes": 3245379,
+  "medianWarmBytes": 168291,
+  "medianUnusedJsBytes": 987994.492580507,
   "heaviest": {
-    "name": "CNN",
-    "coldBytes": 14628873,
-    "warmBytes": 627123,
-    "jsBytes": 1321300,
-    "jsUnused": 0.709435534052734,
-    "jsUnusedBytes": 937377.1711438774,
-    "requests": 66,
+    "name": "Pinterest",
+    "coldBytes": 8749474,
+    "warmBytes": 422195,
+    "jsBytes": 2440329,
+    "jsUnused": 0.5545751346918526,
+    "jsUnusedBytes": 1353345.783867434,
+    "requests": 153,
     "coldByType": {
-      "Font": 436889,
-      "Script": 1321300,
-      "Document": 618482,
-      "Image": 743666,
-      "Media": 11383163,
-      "Fetch": 78126,
-      "XHR": 4064,
-      "Stylesheet": 43183,
+      "Script": 2440329,
+      "Font": 174554,
+      "Document": 268389,
+      "Image": 5773812,
+      "Stylesheet": 37945,
+      "Manifest": 5186,
+      "XHR": 34516,
+      "Fetch": 13678,
+      "FedCM": 1065,
       "Preflight": 0
     },
     "warmByType": {
+      "Script": 102402,
       "Font": 0,
-      "Script": 1706,
-      "Image": 7769,
-      "Document": 615858,
-      "XHR": 1157,
-      "Stylesheet": 212,
-      "Fetch": 421
+      "Image": 0,
+      "Document": 266321,
+      "Stylesheet": 0,
+      "Manifest": 5181,
+      "XHR": 34968,
+      "Fetch": 13323
     }
   },
   "lightest": {
     "name": "IMDb",
-    "coldBytes": 452889,
-    "warmBytes": 104718,
-    "jsBytes": 411399,
-    "jsUnused": 0.5313456522770024,
-    "jsUnusedBytes": 218595.0700011065,
+    "coldBytes": 454558,
+    "warmBytes": 110945,
+    "jsBytes": 413010,
+    "jsUnused": 0.5160976863492835,
+    "jsUnusedBytes": 213153.5054391176,
     "requests": 14,
     "coldByType": {
-      "Document": 5312,
-      "Script": 411399,
-      "Fetch": 4526,
+      "Document": 5313,
+      "Script": 413010,
+      "Fetch": 4553,
       "Image": 0,
-      "Stylesheet": 574,
+      "Stylesheet": 604,
       "Font": 31078
     },
     "warmByType": {
-      "Document": 2588,
-      "Script": 99450,
-      "Stylesheet": 0,
+      "Script": 105295,
+      "Document": 2589,
       "Image": 0,
+      "Stylesheet": 336,
       "Font": 0,
-      "Fetch": 2680
+      "Fetch": 2725
     }
   },
-  "jsShareOfBytes": 0.45300813638556775,
-  "unusedJsShareOfBytes": 0.2571716512422281,
-  "unusedJsShareOfJs": 0.5676976429035752,
-  "unusedJsBytes": 35287835.128225714,
-  "medianJsBytes": 1456512,
-  "jsHeavySites": 21,
+  "jsShareOfBytes": 0.46846880634924765,
+  "unusedJsShareOfBytes": 0.26553635425698385,
+  "unusedJsShareOfJs": 0.5668175781570057,
+  "unusedJsBytes": 34508258.86594931,
+  "medianJsBytes": 1597262,
+  "jsHeavySites": 17,
   "resourceTypes": [
     {
       "type": "Script",
-      "share": 0.45300813638556775
+      "share": 0.46846880634924765
     },
     {
       "type": "Image",
-      "share": 0.21490617231973114
-    },
-    {
-      "type": "Media",
-      "share": 0.1057392114373997
+      "share": 0.29192283605904007
     },
     {
       "type": "Font",
-      "share": 0.06242040918162763
-    },
-    {
-      "type": "Fetch",
-      "share": 0.06090344062339201
+      "share": 0.07159556041751254
     },
     {
       "type": "Document",
-      "share": 0.0417636892089978
+      "share": 0.04251266084044919
     },
     {
-      "type": "Stylesheet",
-      "share": 0.026605241456470845
+      "type": "Fetch",
+      "share": 0.031196078481917244
     },
     {
       "type": "XHR",
-      "share": 0.026004396527627188
+      "share": 0.02724638180767973
+    },
+    {
+      "type": "Stylesheet",
+      "share": 0.027171918610039803
+    },
+    {
+      "type": "Media",
+      "share": 0.023544067311898956
     },
     {
       "type": "Other",
-      "share": 0.007935802694608586
+      "share": 0.015702947167487907
     },
     {
       "type": "Ping",
-      "share": 0.0005474470175860012
+      "share": 0.0004961032632263264
     },
     {
       "type": "Manifest",
-      "share": 0.0001508507390640411
+      "share": 0.00012114793672036361
     },
     {
       "type": "FedCM",
-      "share": 0.000015202407927319664
+      "share": 0.000021491754780232186
     },
     {
       "type": "Preflight",
@@ -186,341 +188,345 @@
   "videoSites": [
     {
       "name": "CNN",
-      "mediaBytes": 11383163
-    },
-    {
-      "name": "Amazon",
-      "mediaBytes": 1818952
-    },
-    {
-      "name": "Airbnb",
-      "mediaBytes": 251655
-    },
-    {
-      "name": "TikTok",
-      "mediaBytes": 982244
-    }
-  ],
-  "heaviestWithoutMediaBytes": 3245710,
-  "repeatShareOfMonth": {
-    "fiveVisitsADay": 0.9379440290927902,
-    "oneVisitADay": 0.7463052765555652
-  },
-  "months": [
-    {
-      "name": "Figma",
-      "coldBytes": 5779727,
-      "warmBytes": 2685126,
-      "monthBytes": 405863501,
-      "topRepeatType": "XHR",
-      "topRepeatBytes": 2576182,
-      "monthBytesIfCached": 405863501
+      "mediaBytes": 155901
     },
     {
       "name": "Yahoo",
-      "coldBytes": 5744151,
-      "warmBytes": 2008668,
-      "monthBytes": 305035683,
-      "topRepeatType": "Script",
-      "topRepeatBytes": 1163059,
-      "monthBytesIfCached": 104730811
-    },
-    {
-      "name": "Nike",
-      "coldBytes": 5841130,
-      "warmBytes": 1039179,
-      "monthBytes": 160678801,
-      "topRepeatType": "Image",
-      "topRepeatBytes": 601820,
-      "monthBytesIfCached": 17624050
-    },
-    {
-      "name": "WhatsApp",
-      "coldBytes": 1692491,
-      "warmBytes": 970112,
-      "monthBytes": 146239179,
-      "topRepeatType": "Image",
-      "topRepeatBytes": 915441,
-      "monthBytesIfCached": 9838470
-    },
-    {
-      "name": "CNN",
-      "coldBytes": 14628873,
-      "warmBytes": 627123,
-      "monthBytes": 108070200,
-      "topRepeatType": "Document",
-      "topRepeatBytes": 615858,
-      "monthBytesIfCached": 106626837
-    },
-    {
-      "name": "Google",
-      "coldBytes": 930895,
-      "warmBytes": 694216,
-      "monthBytes": 104369079,
-      "topRepeatType": "Script",
-      "topRepeatBytes": 676837,
-      "monthBytesIfCached": 3515747
-    },
-    {
-      "name": "Pinterest",
-      "coldBytes": 7186203,
-      "warmBytes": 642865,
-      "monthBytes": 102973088,
-      "topRepeatType": "Document",
-      "topRepeatBytes": 473142,
-      "monthBytesIfCached": 87692095
-    },
-    {
-      "name": "Booking.com",
-      "coldBytes": 6612858,
-      "warmBytes": 589590,
-      "monthBytes": 94461768,
-      "topRepeatType": "Script",
-      "topRepeatBytes": 327757,
-      "monthBytesIfCached": 42504574
-    },
-    {
-      "name": "Amazon",
-      "coldBytes": 6274218,
-      "warmBytes": 476258,
-      "monthBytes": 77236660,
-      "topRepeatType": "XHR",
-      "topRepeatBytes": 303067,
-      "monthBytesIfCached": 52643763
-    },
-    {
-      "name": "Apple",
-      "coldBytes": 1726162,
-      "warmBytes": 415404,
-      "monthBytes": 63621358,
-      "topRepeatType": "Script",
-      "topRepeatBytes": 377523,
-      "monthBytesIfCached": 1726162
-    },
-    {
-      "name": "Walmart",
-      "coldBytes": 3630177,
-      "warmBytes": 402304,
-      "monthBytes": 63573473,
-      "topRepeatType": "Script",
-      "topRepeatBytes": 277563,
-      "monthBytesIfCached": 21345234
-    },
-    {
-      "name": "Wikipedia",
-      "coldBytes": 626792,
-      "warmBytes": 318630,
-      "monthBytes": 48102662,
-      "topRepeatType": "Script",
-      "topRepeatBytes": 172549,
-      "monthBytesIfCached": 8852486
-    },
-    {
-      "name": "ESPN",
-      "coldBytes": 5859794,
-      "warmBytes": 272628,
-      "monthBytes": 46481366,
-      "topRepeatType": "Document",
-      "topRepeatBytes": 107353,
-      "monthBytesIfCached": 31314507
-    },
-    {
-      "name": "Netflix",
-      "coldBytes": 3578333,
-      "warmBytes": 226135,
-      "monthBytes": 37272448,
-      "topRepeatType": "Document",
-      "topRepeatBytes": 172239,
-      "monthBytesIfCached": 33333186
-    },
-    {
-      "name": "Airbnb",
-      "coldBytes": 6182737,
-      "warmBytes": 190852,
-      "monthBytes": 34619685,
-      "topRepeatType": "Script",
-      "topRepeatBytes": 98458,
-      "monthBytesIfCached": 19704189
+      "mediaBytes": 157447
     },
     {
       "name": "TikTok",
-      "coldBytes": 4580118,
-      "warmBytes": 189954,
-      "monthBytes": 32883264,
-      "topRepeatType": "Fetch",
-      "topRepeatBytes": 56237,
-      "monthBytesIfCached": 30696242
+      "mediaBytes": 1247253
     },
     {
-      "name": "IKEA",
-      "coldBytes": 1816749,
-      "warmBytes": 198799,
-      "monthBytes": 31437800,
-      "topRepeatType": "Document",
-      "topRepeatBytes": 193406,
-      "monthBytesIfCached": 30657040
+      "name": "Airbnb",
+      "mediaBytes": 134213
     },
     {
-      "name": "YouTube",
-      "coldBytes": 1340085,
-      "warmBytes": 193523,
-      "monthBytes": 30175012,
+      "name": "Amazon",
+      "mediaBytes": 1296923
+    }
+  ],
+  "heaviestWithoutMediaBytes": 8749474,
+  "repeatShareOfMonth": {
+    "fiveVisitsADay": 0.9551241434101017,
+    "oneVisitADay": 0.8055407112615569
+  },
+  "months": [
+    {
+      "name": "TikTok",
+      "coldBytes": 5589012,
+      "warmBytes": 3918074,
+      "monthBytes": 589382038,
+      "topRepeatType": "Media",
+      "topRepeatBytes": 2493461,
+      "monthBytesIfCached": 214972752
+    },
+    {
+      "name": "Figma",
+      "coldBytes": 6127245,
+      "warmBytes": 3043866,
+      "monthBytes": 459663279,
+      "topRepeatType": "XHR",
+      "topRepeatBytes": 2591676,
+      "monthBytesIfCached": 433205349
+    },
+    {
+      "name": "Booking.com",
+      "coldBytes": 6001908,
+      "warmBytes": 1709070,
+      "monthBytes": 260653338,
+      "topRepeatType": "Image",
+      "topRepeatBytes": 1051198,
+      "monthBytesIfCached": 49965401
+    },
+    {
+      "name": "Walmart",
+      "coldBytes": 3053984,
+      "warmBytes": 1260983,
+      "monthBytes": 190940451,
       "topRepeatType": "Script",
-      "topRepeatBytes": 120220,
-      "monthBytesIfCached": 12260444
+      "topRepeatBytes": 886541,
+      "monthBytesIfCached": 46328650
+    },
+    {
+      "name": "Canva",
+      "coldBytes": 1882145,
+      "warmBytes": 1105182,
+      "monthBytes": 166554263,
+      "topRepeatType": "Image",
+      "topRepeatBytes": 490737,
+      "monthBytesIfCached": 52037780
+    },
+    {
+      "name": "Nike",
+      "coldBytes": 5652528,
+      "warmBytes": 1054041,
+      "monthBytes": 162704637,
+      "topRepeatType": "Image",
+      "topRepeatBytes": 601948,
+      "monthBytesIfCached": 17613056
+    },
+    {
+      "name": "ESPN",
+      "coldBytes": 6816005,
+      "warmBytes": 969968,
+      "monthBytes": 151341237,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 652919,
+      "monthBytesIfCached": 38738510
+    },
+    {
+      "name": "WhatsApp",
+      "coldBytes": 1711542,
+      "warmBytes": 970711,
+      "monthBytes": 146347481,
+      "topRepeatType": "Image",
+      "topRepeatBytes": 915439,
+      "monthBytesIfCached": 9947070
+    },
+    {
+      "name": "Yahoo",
+      "coldBytes": 5824435,
+      "warmBytes": 747989,
+      "monthBytes": 117274796,
+      "topRepeatType": "Fetch",
+      "topRepeatBytes": 305905,
+      "monthBytesIfCached": 89672546
+    },
+    {
+      "name": "Wikipedia",
+      "coldBytes": 1280251,
+      "warmBytes": 521034,
+      "monthBytes": 78914317,
+      "topRepeatType": "Image",
+      "topRepeatBytes": 316367,
+      "monthBytesIfCached": 9553327
+    },
+    {
+      "name": "Pinterest",
+      "coldBytes": 8749474,
+      "warmBytes": 422195,
+      "monthBytes": 71656529,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 266321,
+      "monthBytesIfCached": 56398631
+    },
+    {
+      "name": "Amazon",
+      "coldBytes": 4883716,
+      "warmBytes": 438596,
+      "monthBytes": 70234520,
+      "topRepeatType": "Image",
+      "topRepeatBytes": 226788,
+      "monthBytesIfCached": 35798832
+    },
+    {
+      "name": "Airbnb",
+      "coldBytes": 5532028,
+      "warmBytes": 196419,
+      "monthBytes": 34798459,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 98966,
+      "monthBytesIfCached": 19795351
+    },
+    {
+      "name": "Netflix",
+      "coldBytes": 3656434,
+      "warmBytes": 201290,
+      "monthBytes": 33648644,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 170901,
+      "monthBytesIfCached": 31977609
     },
     {
       "name": "Notion",
-      "coldBytes": 3262329,
-      "warmBytes": 177822,
-      "monthBytes": 29757807,
+      "coldBytes": 3245379,
+      "warmBytes": 201966,
+      "monthBytes": 33338313,
       "topRepeatType": "Script",
-      "topRepeatBytes": 132865,
-      "monthBytesIfCached": 9534186
+      "topRepeatBytes": 157381,
+      "monthBytesIfCached": 9461212
     },
     {
-      "name": "PayPal",
-      "coldBytes": 2059916,
-      "warmBytes": 175508,
-      "monthBytes": 28210608,
+      "name": "IKEA",
+      "coldBytes": 1579041,
+      "warmBytes": 196617,
+      "monthBytes": 30874974,
       "topRepeatType": "Document",
-      "topRepeatBytes": 133253,
-      "monthBytesIfCached": 26912222
-    },
-    {
-      "name": "The Guardian",
-      "coldBytes": 2599003,
-      "warmBytes": 140421,
-      "monthBytes": 23521732,
-      "topRepeatType": "Script",
-      "topRepeatBytes": 131824,
-      "monthBytesIfCached": 3800539
-    },
-    {
-      "name": "ChatGPT",
-      "coldBytes": 1110958,
-      "warmBytes": 150060,
-      "monthBytes": 23469898,
-      "topRepeatType": "Document",
-      "topRepeatBytes": 74799,
-      "monthBytesIfCached": 23469898
-    },
-    {
-      "name": "Zoom",
-      "coldBytes": 4315039,
-      "warmBytes": 128207,
-      "monthBytes": 23417882,
-      "topRepeatType": "Script",
-      "topRepeatBytes": 98885,
-      "monthBytesIfCached": 7034587
-    },
-    {
-      "name": "GitHub",
-      "coldBytes": 4643163,
-      "warmBytes": 122631,
-      "monthBytes": 22915182,
-      "topRepeatType": "Document",
-      "topRepeatBytes": 122140,
-      "monthBytesIfCached": 22915182
+      "topRepeatBytes": 192287,
+      "monthBytesIfCached": 30252601
     },
     {
       "name": "Uber",
-      "coldBytes": 3357267,
-      "warmBytes": 126836,
-      "monthBytes": 22255831,
+      "coldBytes": 3095549,
+      "warmBytes": 171185,
+      "monthBytes": 28602114,
       "topRepeatType": "Document",
-      "topRepeatBytes": 108068,
-      "monthBytesIfCached": 22255831
-    },
-    {
-      "name": "Instagram",
-      "coldBytes": 2550169,
-      "warmBytes": 124767,
-      "monthBytes": 21140452,
-      "topRepeatType": "Document",
-      "topRepeatBytes": 116319,
-      "monthBytesIfCached": 21140452
-    },
-    {
-      "name": "Spotify",
-      "coldBytes": 5200541,
-      "warmBytes": 104583,
-      "monthBytes": 20783408,
-      "topRepeatType": "Image",
-      "topRepeatBytes": 53851,
-      "monthBytesIfCached": 12658885
+      "topRepeatBytes": 148691,
+      "monthBytesIfCached": 28602114
     },
     {
       "name": "Twitch",
-      "coldBytes": 3610867,
-      "warmBytes": 92171,
-      "monthBytes": 17344346,
+      "coldBytes": 3820960,
+      "warmBytes": 157890,
+      "monthBytes": 27346570,
       "topRepeatType": "Document",
-      "topRepeatBytes": 75219,
-      "monthBytesIfCached": 17245410
+      "topRepeatBytes": 81821,
+      "monthBytesIfCached": 18613531
+    },
+    {
+      "name": "YouTube",
+      "coldBytes": 1353901,
+      "warmBytes": 168291,
+      "monthBytes": 26429260,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 94575,
+      "monthBytesIfCached": 12336095
+    },
+    {
+      "name": "Google",
+      "coldBytes": 1029081,
+      "warmBytes": 152916,
+      "monthBytes": 23813565,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 131755,
+      "monthBytesIfCached": 4182070
+    },
+    {
+      "name": "Zoom",
+      "coldBytes": 4451209,
+      "warmBytes": 124196,
+      "monthBytes": 22956413,
+      "topRepeatType": "Script",
+      "topRepeatBytes": 98780,
+      "monthBytesIfCached": 7026674
+    },
+    {
+      "name": "PayPal",
+      "coldBytes": 1935211,
+      "warmBytes": 134456,
+      "monthBytes": 21969155,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 89224,
+      "monthBytesIfCached": 20953869
+    },
+    {
+      "name": "Instagram",
+      "coldBytes": 2568233,
+      "warmBytes": 109726,
+      "monthBytes": 18917407,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 104559,
+      "monthBytesIfCached": 18917407
     },
     {
       "name": "IMDb",
-      "coldBytes": 452889,
-      "warmBytes": 104718,
-      "monthBytes": 16055871,
+      "coldBytes": 454558,
+      "warmBytes": 110945,
+      "monthBytes": 16985363,
       "topRepeatType": "Script",
-      "topRepeatBytes": 99450,
-      "monthBytesIfCached": 1237821
+      "topRepeatBytes": 105295,
+      "monthBytesIfCached": 1246344
     },
     {
       "name": "BBC News",
-      "coldBytes": 2127379,
-      "warmBytes": 88088,
-      "monthBytes": 15252491,
+      "coldBytes": 1984912,
+      "warmBytes": 91124,
+      "monthBytes": 15562388,
       "topRepeatType": "Document",
-      "topRepeatBytes": 68474,
-      "monthBytesIfCached": 14754831
+      "topRepeatBytes": 71639,
+      "monthBytesIfCached": 15074711
     },
     {
       "name": "Bing",
-      "coldBytes": 856144,
-      "warmBytes": 94816,
-      "monthBytes": 14983728,
-      "topRepeatType": "Image",
-      "topRepeatBytes": 52562,
-      "monthBytesIfCached": 7151990
+      "coldBytes": 861509,
+      "warmBytes": 87750,
+      "monthBytes": 13936259,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 58618,
+      "monthBytesIfCached": 13933875
     },
     {
       "name": "Microsoft",
-      "coldBytes": 10802920,
-      "warmBytes": 26661,
-      "monthBytes": 14775409,
+      "coldBytes": 8331946,
+      "warmBytes": 33258,
+      "monthBytes": 13287388,
       "topRepeatType": "XHR",
-      "topRepeatBytes": 14250,
-      "monthBytesIfCached": 13009312
+      "topRepeatBytes": 14815,
+      "monthBytesIfCached": 11782786
+    },
+    {
+      "name": "Spotify",
+      "coldBytes": 4865966,
+      "warmBytes": 51964,
+      "monthBytes": 12608602,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 45302,
+      "monthBytesIfCached": 12445000
+    },
+    {
+      "name": "CNN",
+      "coldBytes": 8546981,
+      "warmBytes": 24499,
+      "monthBytes": 12197332,
+      "topRepeatType": "Image",
+      "topRepeatBytes": 17245,
+      "monthBytesIfCached": 9342343
     },
     {
       "name": "Duolingo",
-      "coldBytes": 3793592,
-      "warmBytes": 53687,
-      "monthBytes": 11792955,
+      "coldBytes": 3858592,
+      "warmBytes": 55812,
+      "monthBytes": 12174580,
       "topRepeatType": "Document",
-      "topRepeatBytes": 32922,
-      "monthBytesIfCached": 10894932
+      "topRepeatBytes": 32949,
+      "monthBytesIfCached": 11272236
+    },
+    {
+      "name": "Apple",
+      "coldBytes": 1781565,
+      "warmBytes": 52029,
+      "monthBytes": 9533886,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 43083,
+      "monthBytesIfCached": 8200932
     },
     {
       "name": "Facebook",
-      "coldBytes": 824962,
-      "warmBytes": 58600,
-      "monthBytes": 9556362,
+      "coldBytes": 846550,
+      "warmBytes": 53334,
+      "monthBytes": 8793316,
       "topRepeatType": "Document",
-      "topRepeatBytes": 45486,
-      "monthBytesIfCached": 9223645
+      "topRepeatBytes": 44801,
+      "monthBytesIfCached": 8616453
+    },
+    {
+      "name": "GitHub",
+      "coldBytes": 4258116,
+      "warmBytes": 5333,
+      "monthBytes": 5052733,
+      "topRepeatType": "Document",
+      "topRepeatBytes": 4839,
+      "monthBytesIfCached": 5052733
+    },
+    {
+      "name": "The Guardian",
+      "coldBytes": 2711182,
+      "warmBytes": 13621,
+      "monthBytes": 4740711,
+      "topRepeatType": "XHR",
+      "topRepeatBytes": 6024,
+      "monthBytesIfCached": 4176150
     },
     {
       "name": "DuckDuckGo",
-      "coldBytes": 1616474,
-      "warmBytes": 8089,
-      "monthBytes": 2821735,
+      "coldBytes": 1615667,
+      "warmBytes": 7170,
+      "monthBytes": 2683997,
       "topRepeatType": "Ping",
-      "topRepeatBytes": 5815,
-      "monthBytesIfCached": 2821735
+      "topRepeatBytes": 4971,
+      "monthBytesIfCached": 2683997
     }
   ],
   "workTimeSpread": {
@@ -537,11 +543,11 @@
       "gni": 2660,
       "gniYear": "2025",
       "gbWorkSeconds": 123157.89473684212,
-      "medianFirstVisitUsd": 0.1458004757296294,
-      "medianFirstVisitWorkSeconds": 410.4338203997989,
-      "heaviestFirstVisitUsd": 0.5960587353911251,
-      "heaviestFirstVisitWorkSeconds": 1677.9277483491524,
-      "unusedJsPerMillionVisitsUsd": 38126.63922648159
+      "medianFirstVisitUsd": 0.13223414425738156,
+      "medianFirstVisitWorkSeconds": 372.2440872929599,
+      "heaviestFirstVisitUsd": 0.35650049103423953,
+      "heaviestFirstVisitWorkSeconds": 1003.5622845354834,
+      "unusedJsPerMillionVisitsUsd": 40256.19388594961
     },
     {
       "name": "Tanzania",
@@ -549,11 +555,11 @@
       "gni": 1270,
       "gniYear": "2025",
       "gbWorkSeconds": 4952.692913385827,
-      "medianFirstVisitUsd": 0.002799369134008884,
-      "medianFirstVisitWorkSeconds": 16.505256752329547,
-      "heaviestFirstVisitUsd": 0.011444327719509602,
-      "heaviestFirstVisitWorkSeconds": 67.47647713676213,
-      "unusedJsPerMillionVisitsUsd": 732.0314731484465
+      "medianFirstVisitUsd": 0.002538895569741726,
+      "medianFirstVisitWorkSeconds": 14.969488209626805,
+      "heaviestFirstVisitUsd": 0.006844809427857399,
+      "heaviestFirstVisitWorkSeconds": 40.35742755574504,
+      "unusedJsPerMillionVisitsUsd": 772.9189226102325
     },
     {
       "name": "Ethiopia",
@@ -561,11 +567,11 @@
       "gni": 1110,
       "gniYear": "2025",
       "gbWorkSeconds": 4587.243243243243,
-      "medianFirstVisitUsd": 0.0022661559656262397,
-      "medianFirstVisitWorkSeconds": 15.287365649197552,
-      "heaviestFirstVisitUsd": 0.009264455772936345,
-      "heaviestFirstVisitWorkSeconds": 62.497517862835444,
-      "unusedJsPerMillionVisitsUsd": 592.5969068344567
+      "medianFirstVisitUsd": 0.002055296413600445,
+      "medianFirstVisitWorkSeconds": 13.864918509045163,
+      "heaviestFirstVisitUsd": 0.005541036203503609,
+      "heaviestFirstVisitWorkSeconds": 37.379530713364886,
+      "unusedJsPerMillionVisitsUsd": 625.6962706844739
     },
     {
       "name": "South Africa",
@@ -573,11 +579,11 @@
       "gni": 6270,
       "gniYear": "2025",
       "gbWorkSeconds": 2161.6076555023924,
-      "medianFirstVisitUsd": 0.006031973967328668,
-      "medianFirstVisitWorkSeconds": 7.203735417441319,
-      "heaviestFirstVisitUsd": 0.024659801395609974,
-      "heaviestFirstVisitWorkSeconds": 29.450174298297846,
-      "unusedJsPerMillionVisitsUsd": 1577.3535314270098
+      "medianFirstVisitUsd": 0.005470715453848243,
+      "medianFirstVisitWorkSeconds": 6.5334477381843135,
+      "heaviestFirstVisitUsd": 0.014748934600502254,
+      "heaviestFirstVisitWorkSeconds": 17.614038642513698,
+      "unusedJsPerMillionVisitsUsd": 1665.4562499101437
     },
     {
       "name": "Nigeria",
@@ -585,11 +591,11 @@
       "gni": 1360,
       "gniYear": "2025",
       "gbWorkSeconds": 2147.294117647059,
-      "medianFirstVisitUsd": 0.0012997070979326964,
-      "medianFirstVisitWorkSeconds": 7.156034374500023,
-      "heaviestFirstVisitUsd": 0.005313437869772315,
-      "heaviestFirstVisitWorkSeconds": 29.255163800628743,
-      "unusedJsPerMillionVisitsUsd": 339.8717553903502
+      "medianFirstVisitUsd": 0.0011787729430943728,
+      "medianFirstVisitWorkSeconds": 6.490185145507841,
+      "heaviestFirstVisitUsd": 0.003177947234362364,
+      "heaviestFirstVisitWorkSeconds": 17.497403596253957,
+      "unusedJsPerMillionVisitsUsd": 358.8552140690365
     },
     {
       "name": "Nepal",
@@ -597,11 +603,11 @@
       "gni": 1570,
       "gniYear": "2025",
       "gbWorkSeconds": 2050.853503184713,
-      "medianFirstVisitUsd": 0.0014330103900283575,
-      "medianFirstVisitWorkSeconds": 6.834638089511045,
-      "heaviestFirstVisitUsd": 0.005858405856415629,
-      "heaviestFirstVisitWorkSeconds": 27.941237613274033,
-      "unusedJsPerMillionVisitsUsd": 374.73039696884763
+      "medianFirstVisitUsd": 0.001299672732129693,
+      "medianFirstVisitWorkSeconds": 6.1986938969344845,
+      "heaviestFirstVisitUsd": 0.0035038905404508112,
+      "heaviestFirstVisitWorkSeconds": 16.7115492782775,
+      "unusedJsPerMillionVisitsUsd": 395.66087705047613
     },
     {
       "name": "Kenya",
@@ -609,11 +615,11 @@
       "gni": 2200,
       "gniYear": "2025",
       "gbWorkSeconds": 2008.1454545454546,
-      "medianFirstVisitUsd": 0.001966223558411002,
-      "medianFirstVisitWorkSeconds": 6.692310002446174,
-      "heaviestFirstVisitUsd": 0.008038277802988887,
-      "heaviestFirstVisitWorkSeconds": 27.359374631263996,
-      "unusedJsPerMillionVisitsUsd": 514.1649632828374
+      "medianFirstVisitUsd": 0.001783271888270974,
+      "medianFirstVisitWorkSeconds": 6.06960904516957,
+      "heaviestFirstVisitUsd": 0.004807663764804602,
+      "heaviestFirstVisitWorkSeconds": 16.363539214025845,
+      "unusedJsPerMillionVisitsUsd": 542.8835289762346
     },
     {
       "name": "Egypt",
@@ -621,11 +627,11 @@
       "gni": 3260,
       "gniYear": "2025",
       "gbWorkSeconds": 1493.0061349693253,
-      "medianFirstVisitUsd": 0.002166178496554494,
-      "medianFirstVisitWorkSeconds": 4.975565822760752,
-      "heaviestFirstVisitUsd": 0.00885572978295386,
-      "heaviestFirstVisitWorkSeconds": 20.34101368550874,
-      "unusedJsPerMillionVisitsUsd": 566.4529256505837
+      "medianFirstVisitUsd": 0.0019646215718239547,
+      "medianFirstVisitWorkSeconds": 4.512603168655758,
+      "heaviestFirstVisitUsd": 0.0052965787239372735,
+      "heaviestFirstVisitWorkSeconds": 12.165883891055921,
+      "unusedJsPerMillionVisitsUsd": 598.0920234483942
     },
     {
       "name": "Ghana",
@@ -633,11 +639,11 @@
       "gni": 2630,
       "gniYear": "2025",
       "gbWorkSeconds": 1138.8593155893536,
-      "medianFirstVisitUsd": 0.0013330329209566118,
-      "medianFirstVisitWorkSeconds": 3.7953424000468097,
-      "heaviestFirstVisitUsd": 0.005449679866433144,
-      "heaviestFirstVisitWorkSeconds": 15.516046707167824,
-      "unusedJsPerMillionVisitsUsd": 348.5864157849746
+      "medianFirstVisitUsd": 0.001208997890353203,
+      "medianFirstVisitWorkSeconds": 3.4421962748915527,
+      "heaviestFirstVisitUsd": 0.003259433060884476,
+      "heaviestFirstVisitWorkSeconds": 9.280089262320514,
+      "unusedJsPerMillionVisitsUsd": 368.05662981439644
     },
     {
       "name": "Mexico",
@@ -645,11 +651,11 @@
       "gni": 13730,
       "gniYear": "2025",
       "gbWorkSeconds": 1107.1114348142753,
-      "medianFirstVisitUsd": 0.006765142073854803,
-      "medianFirstVisitWorkSeconds": 3.6895399744373467,
-      "heaviestFirstVisitUsd": 0.0276571253221482,
-      "heaviestFirstVisitWorkSeconds": 15.083507240513164,
-      "unusedJsPerMillionVisitsUsd": 1769.0760601087457
+      "medianFirstVisitUsd": 0.0061356642935425035,
+      "medianFirstVisitWorkSeconds": 3.3462384726909153,
+      "heaviestFirstVisitUsd": 0.016541622783988713,
+      "heaviestFirstVisitWorkSeconds": 9.021389031792243,
+      "unusedJsPerMillionVisitsUsd": 1867.8873963080616
     },
     {
       "name": "Morocco",
@@ -657,11 +663,11 @@
       "gni": 4360,
       "gniYear": "2025",
       "gbWorkSeconds": 1081.9816513761468,
-      "medianFirstVisitUsd": 0.0020995268505066634,
-      "medianFirstVisitWorkSeconds": 3.605792902888508,
-      "heaviestFirstVisitUsd": 0.008583245789632201,
-      "heaviestFirstVisitWorkSeconds": 14.741134053386679,
-      "unusedJsPerMillionVisitsUsd": 549.0236048613349
+      "medianFirstVisitUsd": 0.0019041716773062945,
+      "medianFirstVisitWorkSeconds": 3.27028383478659,
+      "heaviestFirstVisitUsd": 0.005133607070893049,
+      "heaviestFirstVisitWorkSeconds": 8.816616914414485,
+      "unusedJsPerMillionVisitsUsd": 579.6891919576743
     },
     {
       "name": "South Korea",
@@ -669,11 +675,11 @@
       "gni": 37880,
       "gniYear": "2025",
       "gbWorkSeconds": 990.3611404435059,
-      "medianFirstVisitUsd": 0.01669623733498156,
-      "medianFirstVisitWorkSeconds": 3.300460009618319,
-      "heaviestFirstVisitUsd": 0.06825724032707513,
-      "heaviestFirstVisitWorkSeconds": 13.492877918931853,
-      "unusedJsPerMillionVisitsUsd": 4366.044857706806
+      "medianFirstVisitUsd": 0.015142698576673864,
+      "medianFirstVisitWorkSeconds": 2.9933613237099763,
+      "heaviestFirstVisitUsd": 0.04082439908757805,
+      "heaviestFirstVisitWorkSeconds": 8.070039608442041,
+      "unusedJsPerMillionVisitsUsd": 4609.909288425315
     },
     {
       "name": "New Zealand",
@@ -681,11 +687,11 @@
       "gni": 46630,
       "gniYear": "2025",
       "gbWorkSeconds": 945.8357280720566,
-      "medianFirstVisitUsd": 0.019628909761086104,
-      "medianFirstVisitWorkSeconds": 3.1520754083425424,
-      "heaviestFirstVisitUsd": 0.08024653603322804,
-      "heaviestFirstVisitWorkSeconds": 12.886254810568552,
-      "unusedJsPerMillionVisitsUsd": 5132.93497243375
+      "medianFirstVisitUsd": 0.01780249393545091,
+      "medianFirstVisitWorkSeconds": 2.858783499649505,
+      "heaviestFirstVisitUsd": 0.047995151821523904,
+      "heaviestFirstVisitWorkSeconds": 7.707220605609501,
+      "unusedJsPerMillionVisitsUsd": 5419.633874016987
     },
     {
       "name": "Philippines",
@@ -693,11 +699,11 @@
       "gni": 4850,
       "gniYear": "2025",
       "gbWorkSeconds": 910.9113402061855,
-      "medianFirstVisitUsd": 0.001966223558411002,
-      "medianFirstVisitWorkSeconds": 3.035687011418883,
-      "heaviestFirstVisitUsd": 0.008038277802988887,
-      "heaviestFirstVisitWorkSeconds": 12.410437977068204,
-      "unusedJsPerMillionVisitsUsd": 514.1649632828374
+      "medianFirstVisitUsd": 0.001783271888270974,
+      "medianFirstVisitWorkSeconds": 2.7532247215202172,
+      "heaviestFirstVisitUsd": 0.004807663764804602,
+      "heaviestFirstVisitWorkSeconds": 7.422636344506569,
+      "unusedJsPerMillionVisitsUsd": 542.8835289762346
     },
     {
       "name": "Canada",
@@ -705,11 +711,11 @@
       "gni": 56420,
       "gniYear": "2025",
       "gbWorkSeconds": 712.7004608294931,
-      "medianFirstVisitUsd": 0.017895966963842512,
-      "medianFirstVisitWorkSeconds": 2.375132942666656,
-      "heaviestFirstVisitUsd": 0.07316195220686496,
-      "heaviestFirstVisitWorkSeconds": 9.70997338045028,
-      "unusedJsPerMillionVisitsUsd": 4679.7726319132835
+      "medianFirstVisitUsd": 0.01623079667799175,
+      "medianFirstVisitWorkSeconds": 2.1541333839915318,
+      "heaviestFirstVisitUsd": 0.04375788884237409,
+      "heaviestFirstVisitWorkSeconds": 5.807498611338128,
+      "unusedJsPerMillionVisitsUsd": 4941.160255258272
     },
     {
       "name": "Japan",
@@ -717,11 +723,11 @@
       "gni": 38340,
       "gniYear": "2025",
       "gbWorkSeconds": 679.661971830986,
-      "medianFirstVisitUsd": 0.011597386412322521,
-      "medianFirstVisitWorkSeconds": 2.2650294589324735,
-      "heaviestFirstVisitUsd": 0.04741221483796835,
-      "heaviestFirstVisitWorkSeconds": 9.259850409668937,
-      "unusedJsPerMillionVisitsUsd": 3032.7018173292786
+      "medianFirstVisitUsd": 0.010518281646072864,
+      "medianFirstVisitWorkSeconds": 2.0542747252424,
+      "heaviestFirstVisitUsd": 0.028357067629694938,
+      "heaviestFirstVisitWorkSeconds": 5.538281753029622,
+      "unusedJsPerMillionVisitsUsd": 3202.0926793852486
     },
     {
       "name": "United Arab Emirates",
@@ -729,11 +735,11 @@
       "gni": 51550,
       "gniYear": "2024",
       "gbWorkSeconds": 669.6349175557712,
-      "medianFirstVisitUsd": 0.01536320441402495,
-      "medianFirstVisitWorkSeconds": 2.2316134753097736,
-      "heaviestFirstVisitUsd": 0.06280756046064198,
-      "heaviestFirstVisitWorkSeconds": 9.12323982016076,
-      "unusedJsPerMillionVisitsUsd": 4017.4584419218318
+      "medianFirstVisitUsd": 0.013933700686320664,
+      "medianFirstVisitWorkSeconds": 2.0239680065794206,
+      "heaviestFirstVisitUsd": 0.03756496602669358,
+      "heaviestFirstVisitWorkSeconds": 5.456575472509827,
+      "unusedJsPerMillionVisitsUsd": 4241.852658610919
     },
     {
       "name": "Bangladesh",
@@ -741,11 +747,11 @@
       "gni": 2840,
       "gniYear": "2025",
       "gbWorkSeconds": 606.4225352112677,
-      "medianFirstVisitUsd": 0.0007664939295500518,
-      "medianFirstVisitWorkSeconds": 2.0209530086164746,
-      "heaviestFirstVisitUsd": 0.0031335659231990576,
-      "heaviestFirstVisitWorkSeconds": 8.262021701730474,
-      "unusedJsPerMillionVisitsUsd": 200.43718907636037
+      "medianFirstVisitUsd": 0.0006951737869530917,
+      "medianFirstVisitWorkSeconds": 1.8329089143326587,
+      "heaviestFirstVisitUsd": 0.0018741740100085735,
+      "heaviestFirstVisitWorkSeconds": 4.941484150332465,
+      "unusedJsPerMillionVisitsUsd": 211.63256214327794
     },
     {
       "name": "Pakistan",
@@ -753,11 +759,11 @@
       "gni": 1500,
       "gniYear": "2025",
       "gbWorkSeconds": 599.04,
-      "medianFirstVisitUsd": 0.00039990987628698346,
-      "medianFirstVisitWorkSeconds": 1.9963501024246215,
-      "heaviestFirstVisitUsd": 0.001634903959929943,
-      "heaviestFirstVisitWorkSeconds": 8.161440567970276,
-      "unusedJsPerMillionVisitsUsd": 104.57592473549236
+      "medianFirstVisitUsd": 0.00036269936710596083,
+      "medianFirstVisitWorkSeconds": 1.8105952405929566,
+      "heaviestFirstVisitUsd": 0.0009778299182653426,
+      "heaviestFirstVisitWorkSeconds": 4.881326951980591,
+      "unusedJsPerMillionVisitsUsd": 110.41698894431892
     },
     {
       "name": "Argentina",
@@ -765,11 +771,11 @@
       "gni": 14650,
       "gniYear": "2025",
       "gbWorkSeconds": 567.3501706484642,
-      "medianFirstVisitUsd": 0.0036991663556545976,
-      "medianFirstVisitWorkSeconds": 1.8907411379618857,
-      "heaviestFirstVisitUsd": 0.015122861629351975,
-      "heaviestFirstVisitWorkSeconds": 7.729692005500859,
-      "unusedJsPerMillionVisitsUsd": 967.3273038033044
+      "medianFirstVisitUsd": 0.003354969145730138,
+      "medianFirstVisitWorkSeconds": 1.7148128985138071,
+      "heaviestFirstVisitUsd": 0.00904492674395442,
+      "heaviestFirstVisitWorkSeconds": 4.623099758275133,
+      "unusedJsPerMillionVisitsUsd": 1021.3571477349501
     },
     {
       "name": "United States",
@@ -777,11 +783,11 @@
       "gni": 88810,
       "gniYear": "2025",
       "gbWorkSeconds": 505.8889764666141,
-      "medianFirstVisitUsd": 0.019995493814349174,
-      "medianFirstVisitWorkSeconds": 1.685916649947603,
-      "heaviestFirstVisitUsd": 0.08174519799649715,
-      "heaviestFirstVisitWorkSeconds": 6.892332424251443,
-      "unusedJsPerMillionVisitsUsd": 5228.796236774619
+      "medianFirstVisitUsd": 0.018134968355298042,
+      "medianFirstVisitWorkSeconds": 1.5290467632526938,
+      "heaviestFirstVisitUsd": 0.048891495913267136,
+      "heaviestFirstVisitWorkSeconds": 4.122278137580726,
+      "unusedJsPerMillionVisitsUsd": 5520.849447215946
     },
     {
       "name": "Switzerland",
@@ -789,11 +795,11 @@
       "gni": 110330,
       "gniYear": "2025",
       "gbWorkSeconds": 494.7658841656847,
-      "medianFirstVisitUsd": 0.024294524984434247,
-      "medianFirstVisitWorkSeconds": 1.6488480293976582,
-      "heaviestFirstVisitUsd": 0.09932041556574404,
-      "heaviestFirstVisitWorkSeconds": 6.740789193839313,
-      "unusedJsPerMillionVisitsUsd": 6352.987427681161
+      "medianFirstVisitUsd": 0.02203398655168712,
+      "medianFirstVisitWorkSeconds": 1.495427275437625,
+      "heaviestFirstVisitUsd": 0.05940316753461957,
+      "heaviestFirstVisitWorkSeconds": 4.031640700618429,
+      "unusedJsPerMillionVisitsUsd": 6707.832078367374
     },
     {
       "name": "Portugal",
@@ -801,11 +807,11 @@
       "gni": 29930,
       "gniYear": "2025",
       "gbWorkSeconds": 447.82893417975276,
-      "medianFirstVisitUsd": 0.005965322321280837,
-      "medianFirstVisitWorkSeconds": 1.4924267805463052,
-      "heaviestFirstVisitUsd": 0.02438731740228832,
-      "heaviestFirstVisitWorkSeconds": 6.101310815514031,
-      "unusedJsPerMillionVisitsUsd": 1559.924210637761
+      "medianFirstVisitUsd": 0.005410265559330583,
+      "medianFirstVisitWorkSeconds": 1.353560591656111,
+      "heaviestFirstVisitUsd": 0.01458596294745803,
+      "heaviestFirstVisitWorkSeconds": 3.64917108421536,
+      "unusedJsPerMillionVisitsUsd": 1647.053418419424
     },
     {
       "name": "Vietnam",
@@ -813,11 +819,11 @@
       "gni": 4970,
       "gniYear": "2025",
       "gbWorkSeconds": 436.92555331991946,
-      "medianFirstVisitUsd": 0.0009664488676935434,
-      "medianFirstVisitWorkSeconds": 1.45609036645659,
-      "heaviestFirstVisitUsd": 0.003951017903164029,
-      "heaviestFirstVisitWorkSeconds": 5.952760977644315,
-      "unusedJsPerMillionVisitsUsd": 252.72515144410653
+      "medianFirstVisitUsd": 0.000876523470506072,
+      "medianFirstVisitWorkSeconds": 1.320605180512971,
+      "heaviestFirstVisitUsd": 0.002363088969141245,
+      "heaviestFirstVisitWorkSeconds": 3.560323984090471,
+      "unusedJsPerMillionVisitsUsd": 266.84105661543737
     },
     {
       "name": "India",
@@ -825,11 +831,11 @@
       "gni": 2760,
       "gniYear": "2025",
       "gbWorkSeconds": 434.0869565217392,
-      "medianFirstVisitUsd": 0.0005332131683826447,
-      "medianFirstVisitWorkSeconds": 1.446630509003349,
-      "heaviestFirstVisitUsd": 0.0021798719465732576,
-      "heaviestFirstVisitWorkSeconds": 5.914087368094404,
-      "unusedJsPerMillionVisitsUsd": 139.43456631398982
+      "medianFirstVisitUsd": 0.00048359915614128114,
+      "medianFirstVisitWorkSeconds": 1.312025536661563,
+      "heaviestFirstVisitUsd": 0.0013037732243537904,
+      "heaviestFirstVisitWorkSeconds": 3.5371934434641967,
+      "unusedJsPerMillionVisitsUsd": 147.22265192575856
     },
     {
       "name": "Indonesia",
@@ -837,11 +843,11 @@
       "gni": 5120,
       "gniYear": "2025",
       "gbWorkSeconds": 409.50000000000006,
-      "medianFirstVisitUsd": 0.0009331230446696282,
-      "medianFirstVisitWorkSeconds": 1.3646924528293314,
-      "heaviestFirstVisitUsd": 0.003814775906503201,
-      "heaviestFirstVisitWorkSeconds": 5.579109763260932,
-      "unusedJsPerMillionVisitsUsd": 244.0104910494822
+      "medianFirstVisitUsd": 0.0008462985232472421,
+      "medianFirstVisitWorkSeconds": 1.2377115902490916,
+      "heaviestFirstVisitUsd": 0.002281603142619133,
+      "heaviestFirstVisitWorkSeconds": 3.3368445960804825,
+      "unusedJsPerMillionVisitsUsd": 257.6396408700775
     },
     {
       "name": "Sri Lanka",
@@ -849,11 +855,11 @@
       "gni": 4670,
       "gniYear": "2025",
       "gbWorkSeconds": 400.8565310492505,
-      "medianFirstVisitUsd": 0.0008331455755978823,
-      "medianFirstVisitWorkSeconds": 1.335887381172793,
-      "heaviestFirstVisitUsd": 0.0034060499165207148,
-      "heaviestFirstVisitWorkSeconds": 5.461349416468332,
-      "unusedJsPerMillionVisitsUsd": 217.8665098656091
+      "medianFirstVisitUsd": 0.0007556236814707518,
+      "medianFirstVisitWorkSeconds": 1.2115867509321177,
+      "heaviestFirstVisitUsd": 0.0020371456630527973,
+      "heaviestFirstVisitWorkSeconds": 3.266412574933479,
+      "unusedJsPerMillionVisitsUsd": 230.03539363399776
     },
     {
       "name": "Peru",
@@ -861,11 +867,11 @@
       "gni": 8430,
       "gniYear": "2025",
       "gbWorkSeconds": 399.7153024911033,
-      "medianFirstVisitUsd": 0.0014996620360761882,
-      "medianFirstVisitWorkSeconds": 1.3320841430769275,
-      "heaviestFirstVisitUsd": 0.006130889849737287,
-      "heaviestFirstVisitWorkSeconds": 5.445801090727499,
-      "unusedJsPerMillionVisitsUsd": 392.15971775809635
+      "medianFirstVisitUsd": 0.0013601226266473532,
+      "medianFirstVisitWorkSeconds": 1.2081373936340905,
+      "heaviestFirstVisitUsd": 0.0036668621934950354,
+      "heaviestFirstVisitWorkSeconds": 3.257113179702352,
+      "unusedJsPerMillionVisitsUsd": 414.063708541196
     },
     {
       "name": "Thailand",
@@ -873,11 +879,11 @@
       "gni": 7690,
       "gniYear": "2025",
       "gbWorkSeconds": 399.23016905071523,
-      "medianFirstVisitUsd": 0.001366358743980527,
-      "medianFirstVisitWorkSeconds": 1.330467395959192,
-      "heaviestFirstVisitUsd": 0.005585921863093972,
-      "heaviestFirstVisitWorkSeconds": 5.4391915358709575,
-      "unusedJsPerMillionVisitsUsd": 357.3010761795989
+      "medianFirstVisitUsd": 0.0012392228376120328,
+      "medianFirstVisitWorkSeconds": 1.206671080369168,
+      "heaviestFirstVisitUsd": 0.0033409188874065875,
+      "heaviestFirstVisitWorkSeconds": 3.2531600297659984,
+      "unusedJsPerMillionVisitsUsd": 377.2580455597563
     },
     {
       "name": "Ukraine",
@@ -885,11 +891,11 @@
       "gni": 5510,
       "gniYear": "2025",
       "gbWorkSeconds": 366.92558983666066,
-      "medianFirstVisitUsd": 0.0008997972216457129,
-      "medianFirstVisitWorkSeconds": 1.2228097269842284,
-      "heaviestFirstVisitUsd": 0.0036785339098423723,
-      "heaviestFirstVisitWorkSeconds": 4.999067498529888,
-      "unusedJsPerMillionVisitsUsd": 235.29583065485784
+      "medianFirstVisitUsd": 0.000816073575988412,
+      "medianFirstVisitWorkSeconds": 1.1090306600728184,
+      "heaviestFirstVisitUsd": 0.002200117316097021,
+      "heaviestFirstVisitWorkSeconds": 2.989923495995371,
+      "unusedJsPerMillionVisitsUsd": 248.4382251247176
     },
     {
       "name": "Norway",
@@ -897,11 +903,11 @@
       "gni": 97310,
       "gniYear": "2025",
       "gbWorkSeconds": 313.1863117870722,
-      "medianFirstVisitUsd": 0.013563609970733524,
-      "medianFirstVisitWorkSeconds": 1.0437191600128723,
-      "heaviestFirstVisitUsd": 0.05545049264095724,
-      "heaviestFirstVisitWorkSeconds": 4.266912844471152,
-      "unusedJsPerMillionVisitsUsd": 3546.866780612116
+      "medianFirstVisitUsd": 0.01230155353434384,
+      "medianFirstVisitWorkSeconds": 0.946603975595177,
+      "heaviestFirstVisitUsd": 0.03316473139449954,
+      "heaviestFirstVisitWorkSeconds": 2.5520245471381413,
+      "unusedJsPerMillionVisitsUsd": 3744.9762083614837
     },
     {
       "name": "Saudi Arabia",
@@ -909,11 +915,11 @@
       "gni": 36070,
       "gniYear": "2025",
       "gbWorkSeconds": 309.3185472691988,
-      "medianFirstVisitUsd": 0.004965547630563378,
-      "medianFirstVisitWorkSeconds": 1.0308295164307895,
-      "heaviestFirstVisitUsd": 0.02030005750246346,
-      "heaviestFirstVisitWorkSeconds": 4.214217648418253,
-      "unusedJsPerMillionVisitsUsd": 1298.4843987990303
+      "medianFirstVisitUsd": 0.0045035171415656805,
+      "medianFirstVisitWorkSeconds": 0.934913677738947,
+      "heaviestFirstVisitUsd": 0.012141388151794672,
+      "heaviestFirstVisitWorkSeconds": 2.52050774828496,
+      "unusedJsPerMillionVisitsUsd": 1371.0109460586266
     },
     {
       "name": "Brazil",
@@ -921,11 +927,11 @@
       "gni": 10550,
       "gniYear": "2025",
       "gbWorkSeconds": 283.90521327014216,
-      "medianFirstVisitUsd": 0.0013330329209566118,
-      "medianFirstVisitWorkSeconds": 0.9461374893007685,
-      "heaviestFirstVisitUsd": 0.005449679866433144,
-      "heaviestFirstVisitWorkSeconds": 3.8679813118342534,
-      "unusedJsPerMillionVisitsUsd": 348.5864157849746
+      "medianFirstVisitUsd": 0.001208997890353203,
+      "medianFirstVisitWorkSeconds": 0.858102009759695,
+      "heaviestFirstVisitUsd": 0.003259433060884476,
+      "heaviestFirstVisitWorkSeconds": 2.3134250957253983,
+      "unusedJsPerMillionVisitsUsd": 368.05662981439644
     },
     {
       "name": "Chile",
@@ -933,11 +939,11 @@
       "gni": 16960,
       "gniYear": "2025",
       "gbWorkSeconds": 282.5660377358491,
-      "medianFirstVisitUsd": 0.0021328526735305787,
-      "medianFirstVisitWorkSeconds": 0.9416745766153877,
-      "heaviestFirstVisitUsd": 0.00871948778629303,
-      "heaviestFirstVisitWorkSeconds": 3.849736116967112,
-      "unusedJsPerMillionVisitsUsd": 557.7382652559593
+      "medianFirstVisitUsd": 0.0019343966245651246,
+      "medianFirstVisitWorkSeconds": 0.8540543587702627,
+      "heaviestFirstVisitUsd": 0.0052150928974151614,
+      "heaviestFirstVisitWorkSeconds": 2.3025127131983925,
+      "unusedJsPerMillionVisitsUsd": 588.8906077030342
     },
     {
       "name": "Sweden",
@@ -945,11 +951,11 @@
       "gni": 63010,
       "gniYear": "2025",
       "gbWorkSeconds": 276.8931915568957,
-      "medianFirstVisitUsd": 0.007764916764572263,
-      "medianFirstVisitWorkSeconds": 0.9227693498352183,
-      "heaviestFirstVisitUsd": 0.031744385221973065,
-      "heaviestFirstVisitWorkSeconds": 3.7724481279500766,
-      "unusedJsPerMillionVisitsUsd": 2030.5158719474769
+      "medianFirstVisitUsd": 0.007042412711307407,
+      "medianFirstVisitWorkSeconds": 0.8369082111136306,
+      "heaviestFirstVisitUsd": 0.018986197579652073,
+      "heaviestFirstVisitWorkSeconds": 2.2562870572359106,
+      "unusedJsPerMillionVisitsUsd": 2143.929868668859
     },
     {
       "name": "Germany",
@@ -957,11 +963,11 @@
       "gni": 60200,
       "gniYear": "2025",
       "gbWorkSeconds": 266.1847176079734,
-      "medianFirstVisitUsd": 0.007131726127117872,
-      "medianFirstVisitWorkSeconds": 0.887082479067419,
-      "heaviestFirstVisitUsd": 0.02915578728541732,
-      "heaviestFirstVisitWorkSeconds": 3.6265537407509116,
-      "unusedJsPerMillionVisitsUsd": 1864.937324449614
+      "medianFirstVisitUsd": 0.006468138713389636,
+      "medianFirstVisitWorkSeconds": 0.8045419050807572,
+      "heaviestFirstVisitUsd": 0.017437966875731944,
+      "heaviestFirstVisitWorkSeconds": 2.169028172184066,
+      "unusedJsPerMillionVisitsUsd": 1969.1029695070208
     },
     {
       "name": "Turkey",
@@ -969,11 +975,11 @@
       "gni": 16300,
       "gniYear": "2025",
       "gbWorkSeconds": 202.13006134969325,
-      "medianFirstVisitUsd": 0.0014663362130522728,
-      "medianFirstVisitWorkSeconds": 0.6736150652353018,
-      "heaviestFirstVisitUsd": 0.005994647853076458,
-      "heaviestFirstVisitWorkSeconds": 2.7538603143457987,
-      "unusedJsPerMillionVisitsUsd": 383.445057363472
+      "medianFirstVisitUsd": 0.0013298976793885231,
+      "medianFirstVisitWorkSeconds": 0.6109370443718565,
+      "heaviestFirstVisitUsd": 0.0035853763669729233,
+      "heaviestFirstVisitWorkSeconds": 1.6470735114044939,
+      "unusedJsPerMillionVisitsUsd": 404.862292795836
     },
     {
       "name": "China",
@@ -981,11 +987,11 @@
       "gni": 14230,
       "gniYear": "2025",
       "gbWorkSeconds": 199.96064652143357,
-      "medianFirstVisitUsd": 0.001266381274908781,
-      "medianFirstVisitWorkSeconds": 0.6663853117720978,
-      "heaviestFirstVisitUsd": 0.005177195873111487,
-      "heaviestFirstVisitWorkSeconds": 2.724303773567028,
-      "unusedJsPerMillionVisitsUsd": 331.1570949957258
+      "medianFirstVisitUsd": 0.0011485479958355427,
+      "medianFirstVisitWorkSeconds": 0.6043799994951893,
+      "heaviestFirstVisitUsd": 0.003096461407840252,
+      "heaviestFirstVisitWorkSeconds": 1.6293958553694874,
+      "unusedJsPerMillionVisitsUsd": 349.6537983236766
     },
     {
       "name": "Colombia",
@@ -993,11 +999,11 @@
       "gni": 7900,
       "gniYear": "2025",
       "gbWorkSeconds": 189.56962025316457,
-      "medianFirstVisitUsd": 0.0006665164604783059,
-      "medianFirstVisitWorkSeconds": 0.631756361526779,
-      "heaviestFirstVisitUsd": 0.002724839933216572,
-      "heaviestFirstVisitWorkSeconds": 2.5827343569526193,
-      "unusedJsPerMillionVisitsUsd": 174.2932078924873
+      "medianFirstVisitUsd": 0.0006044989451766015,
+      "medianFirstVisitWorkSeconds": 0.5729731774028344,
+      "heaviestFirstVisitUsd": 0.001629716530442238,
+      "heaviestFirstVisitWorkSeconds": 1.5447237189811998,
+      "unusedJsPerMillionVisitsUsd": 184.02831490719822
     },
     {
       "name": "Netherlands",
@@ -1005,11 +1011,11 @@
       "gni": 68530,
       "gniYear": "2025",
       "gbWorkSeconds": 175.9182839632278,
-      "medianFirstVisitUsd": 0.005365457506850362,
-      "medianFirstVisitWorkSeconds": 0.5862621598029405,
-      "heaviestFirstVisitUsd": 0.021934961462393404,
-      "heaviestFirstVisitWorkSeconds": 2.3967458256296776,
-      "unusedJsPerMillionVisitsUsd": 1403.0603235345227
+      "medianFirstVisitUsd": 0.004866216508671642,
+      "medianFirstVisitWorkSeconds": 0.5317120854652452,
+      "heaviestFirstVisitUsd": 0.013119218070060015,
+      "heaviestFirstVisitWorkSeconds": 1.43348467690952,
+      "unusedJsPerMillionVisitsUsd": 1481.4279350029456
     },
     {
       "name": "Malaysia",
@@ -1017,11 +1023,11 @@
       "gni": 12380,
       "gniYear": "2025",
       "gbWorkSeconds": 169.35702746365106,
-      "medianFirstVisitUsd": 0.0009331230446696282,
-      "medianFirstVisitWorkSeconds": 0.5643962325109997,
-      "heaviestFirstVisitUsd": 0.003814775906503201,
-      "heaviestFirstVisitWorkSeconds": 2.3073539570190604,
-      "unusedJsPerMillionVisitsUsd": 244.0104910494822
+      "medianFirstVisitUsd": 0.0008462985232472421,
+      "medianFirstVisitWorkSeconds": 0.511880722300109,
+      "heaviestFirstVisitUsd": 0.002281603142619133,
+      "heaviestFirstVisitWorkSeconds": 1.380019736020361,
+      "unusedJsPerMillionVisitsUsd": 257.6396408700775
     },
     {
       "name": "Ireland",
@@ -1029,11 +1035,11 @@
       "gni": 87360,
       "gniYear": "2025",
       "gbWorkSeconds": 128.57142857142856,
-      "medianFirstVisitUsd": 0.004998873453587294,
-      "medianFirstVisitWorkSeconds": 0.4284748674503394,
-      "heaviestFirstVisitUsd": 0.02043629949912429,
-      "heaviestFirstVisitWorkSeconds": 1.7516828142106533,
-      "unusedJsPerMillionVisitsUsd": 1307.1990591936546
+      "medianFirstVisitUsd": 0.004533742088824511,
+      "medianFirstVisitWorkSeconds": 0.3886064647563866,
+      "heaviestFirstVisitUsd": 0.012222873978316784,
+      "heaviestFirstVisitWorkSeconds": 1.047674912427153,
+      "unusedJsPerMillionVisitsUsd": 1380.2123618039866
     },
     {
       "name": "Poland",
@@ -1041,11 +1047,11 @@
       "gni": 25520,
       "gniYear": "2025",
       "gbWorkSeconds": 108.564263322884,
-      "medianFirstVisitUsd": 0.0012330554518848657,
-      "medianFirstVisitWorkSeconds": 0.361799342622017,
-      "heaviestFirstVisitUsd": 0.005040953876450658,
-      "heaviestFirstVisitWorkSeconds": 1.4791012001121677,
-      "unusedJsPerMillionVisitsUsd": 322.44243460110147
+      "medianFirstVisitUsd": 0.0011183230485767126,
+      "medianFirstVisitWorkSeconds": 0.3281349133127909,
+      "heaviestFirstVisitUsd": 0.00301497558131814,
+      "heaviestFirstVisitWorkSeconds": 0.88464487276294,
+      "unusedJsPerMillionVisitsUsd": 340.4523825783167
     },
     {
       "name": "Spain",
@@ -1053,11 +1059,11 @@
       "gni": 37120,
       "gniYear": "2025",
       "gbWorkSeconds": 96.82758620689654,
-      "medianFirstVisitUsd": 0.0015996395051479338,
-      "medianFirstVisitWorkSeconds": 0.32268590017639354,
-      "heaviestFirstVisitUsd": 0.006539615839719772,
-      "heaviestFirstVisitWorkSeconds": 1.3191983676676091,
-      "unusedJsPerMillionVisitsUsd": 418.30369894196946
+      "medianFirstVisitUsd": 0.0014507974684238433,
+      "medianFirstVisitWorkSeconds": 0.292660868630327,
+      "heaviestFirstVisitUsd": 0.00391131967306137,
+      "heaviestFirstVisitWorkSeconds": 0.7890075892210006,
+      "unusedJsPerMillionVisitsUsd": 441.66795577727567
     },
     {
       "name": "United Kingdom",
@@ -1065,11 +1071,11 @@
       "gni": 54550,
       "gniYear": "2025",
       "gbWorkSeconds": 85.1065077910174,
-      "medianFirstVisitUsd": 0.002066201027482748,
-      "medianFirstVisitWorkSeconds": 0.2836244416826914,
-      "heaviestFirstVisitUsd": 0.008447003792971372,
-      "heaviestFirstVisitWorkSeconds": 1.1595080550278576,
-      "unusedJsPerMillionVisitsUsd": 540.3089444667105
+      "medianFirstVisitUsd": 0.0018739467300474644,
+      "medianFirstVisitWorkSeconds": 0.25723397093667116,
+      "heaviestFirstVisitUsd": 0.005052121244370937,
+      "heaviestFirstVisitWorkSeconds": 0.6934974129761609,
+      "unusedJsPerMillionVisitsUsd": 570.4877762123144
     },
     {
       "name": "Singapore",
@@ -1077,11 +1083,11 @@
       "gni": 81760,
       "gniYear": "2025",
       "gbWorkSeconds": 57.6986301369863,
-      "medianFirstVisitUsd": 0.0020995268505066634,
-      "medianFirstVisitWorkSeconds": 0.19228543366675507,
-      "heaviestFirstVisitUsd": 0.008583245789632201,
-      "heaviestFirstVisitWorkSeconds": 0.7860976574457672,
-      "unusedJsPerMillionVisitsUsd": 549.0236048613349
+      "medianFirstVisitUsd": 0.0019041716773062945,
+      "medianFirstVisitWorkSeconds": 0.17439380527971543,
+      "heaviestFirstVisitUsd": 0.005133607070893049,
+      "heaviestFirstVisitWorkSeconds": 0.4701620565905963,
+      "unusedJsPerMillionVisitsUsd": 579.6891919576743
     },
     {
       "name": "Australia",
@@ -1089,11 +1095,11 @@
       "gni": 64120,
       "gniYear": "2025",
       "gbWorkSeconds": 51.38365564566438,
-      "medianFirstVisitUsd": 0.0014663362130522728,
-      "medianFirstVisitWorkSeconds": 0.1712402614369217,
-      "heaviestFirstVisitUsd": 0.005994647853076458,
-      "heaviestFirstVisitWorkSeconds": 0.7000611840897772,
-      "unusedJsPerMillionVisitsUsd": 383.445057363472
+      "medianFirstVisitUsd": 0.0013298976793885231,
+      "medianFirstVisitWorkSeconds": 0.1553068281856092,
+      "heaviestFirstVisitUsd": 0.0035853763669729233,
+      "heaviestFirstVisitWorkSeconds": 0.4187039650014543,
+      "unusedJsPerMillionVisitsUsd": 404.862292795836
     },
     {
       "name": "France",
@@ -1101,11 +1107,11 @@
       "gni": 48630,
       "gniYear": "2025",
       "gbWorkSeconds": 30.795805058605797,
-      "medianFirstVisitUsd": 0.0006665164604783059,
-      "medianFirstVisitWorkSeconds": 0.10262955492620922,
-      "heaviestFirstVisitUsd": 0.002724839933216572,
-      "heaviestFirstVisitWorkSeconds": 0.41956819699620995,
-      "unusedJsPerMillionVisitsUsd": 174.2932078924873
+      "medianFirstVisitUsd": 0.0006044989451766015,
+      "medianFirstVisitWorkSeconds": 0.09308015836895725,
+      "heaviestFirstVisitUsd": 0.001629716530442238,
+      "heaviestFirstVisitWorkSeconds": 0.2509421628614328,
+      "unusedJsPerMillionVisitsUsd": 184.02831490719822
     },
     {
       "name": "Italy",
@@ -1113,11 +1119,11 @@
       "gni": 42080,
       "gniYear": "2025",
       "gbWorkSeconds": 16.015209125475284,
-      "medianFirstVisitUsd": 0.0002999324072152376,
-      "medianFirstVisitWorkSeconds": 0.053372002500658246,
-      "heaviestFirstVisitUsd": 0.0012261779699474574,
-      "heaviestFirstVisitWorkSeconds": 0.21819440681954755,
-      "unusedJsPerMillionVisitsUsd": 78.43194355161927
+      "medianFirstVisitUsd": 0.0002720245253294706,
+      "medianFirstVisitWorkSeconds": 0.048405885115662454,
+      "heaviestFirstVisitUsd": 0.000733372438699007,
+      "heaviestFirstVisitWorkSeconds": 0.13050125525138223,
+      "unusedJsPerMillionVisitsUsd": 82.81274170823919
     },
     {
       "name": "Israel",
@@ -1125,11 +1131,11 @@
       "gni": 56180,
       "gniYear": "2025",
       "gbWorkSeconds": 2.6657173371306517,
-      "medianFirstVisitUsd": 0.00006665164604783058,
-      "medianFirstVisitWorkSeconds": 0.008883722420899883,
-      "heaviestFirstVisitUsd": 0.0002724839933216572,
-      "heaviestFirstVisitWorkSeconds": 0.03631826525440671,
-      "unusedJsPerMillionVisitsUsd": 17.429320789248727
+      "medianFirstVisitUsd": 0.00006044989451766014,
+      "medianFirstVisitWorkSeconds": 0.008057116592172288,
+      "heaviestFirstVisitUsd": 0.0001629716530442238,
+      "heaviestFirstVisitWorkSeconds": 0.021721818049041434,
+      "unusedJsPerMillionVisitsUsd": 18.40283149071982
     }
   ],
   "missingPrices": [],

@@ -12,7 +12,7 @@
 <rect width="100%" height="100%" fill="var(--surface)"/>
 <text class="h1" x="40" y="44">The same gigabyte, a very different price</text>
 <text class="sub" x="40" y="68">How long someone on average income works to pay for 1 GB of mobile data. Log scale: each gridline is ten times the last.</text>
-<text class="sub" x="40" y="90">The median site's first visit (3.58 MB) is about 1/300 of that.</text>
+<text class="sub" x="40" y="90">The median site's first visit (3.25 MB) is about 1/331 of that.</text>
 <line x1="210.0" y1="124" x2="210.0" y2="678" stroke="var(--rule)" stroke-width="1"/>
 <text class="tick" x="210.0" y="118" text-anchor="middle">1 s</text>
 <line x1="269.4" y1="124" x2="269.4" y2="678" stroke="var(--rule)" stroke-width="1"/>
